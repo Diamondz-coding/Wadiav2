@@ -30,16 +30,19 @@
         </ul>
     </nav>
 </div>
-<button id="testing" onclick="myFunction()"> hello</button>
+<div class="testbutton">
+<button id="testing" onclick="myFunction()">Click</button></div>
 <script>
     
 function myFunction() {
   var txt;
-  if (confirm("Press a button!")) {
+  if (confirm("Click to redirect")) {
     txt = "You pressed OK!";
     console.log("You pressed confirm")
+    alert("REDIRECTING IN 5 SECS... *click ok to proceed*")
     setTimeout(function () {
         window.location.replace("https://youtube.com");
+        
 }, 5000);
     
   } else {

@@ -87,3 +87,35 @@ nav li {
 #tss {
     font-size: 100px;
 }
+.testbutton {
+    font-family: 'Roboto', sans-serif;
+    size: 500px;
+    display: flex;
+    text-align: center;
+    width: 300px;
+}
+#particles-js{
+    width: 100% !important;
+    height: 1000px !important;
+    overflow-y: hidden !important;
+    
+     
+     background-color: #111111;
+     overflow-x: hidden !important;
+     position: relative;
+     margin-top: 40px;
+    
+ }
+#testing {
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    align-items: center;
+    border: #111111, 1px;
+    cursor: pointer;
+    margin-top: 10%;
+    left: 45%;
+    position: relative;
+    
+    
+}
