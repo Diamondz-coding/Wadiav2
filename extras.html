@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="diamond.png" type="image/icon type">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     
@@ -15,48 +14,86 @@
 </head>
 <head>
 <body>
-  <h1 id="tss">aas</h1>
+   
     <div class="container">
         <div id = "logo">
         <a href="#"><img src="logo.ico" alt="Your browser doesn't support this image."></a>
     </div>
+    
     <nav>
+        
+        <style>
+          #extras {
+            text-decoration: underline;
+          }
+          
+          
+        </style>
 
         <ul>
-            <li><a href="index.html">Home</a></li>
+          <li id="extras"><a href="extras.html">Extras</a></li>
+          <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="extras.html">Extras</a></li>
+            
         </ul>
     </nav>
+    
 </div>
+
+  <h1>extras</h1>
+<script id="pixelcheck">window.addEventListener("resize", function() {
+    if (window.matchMedia("(min-width: 500px)").matches) {
+      console.log("Screen width is at least 500px")
+    } else {
+      confirm('This website is optimized for screens of which are >500px in width')
+    }
+  })</script>
+
+
+
+
+<div class="part"></div>
+<div id="particles-js"></div>
 <div class="testbutton">
-<button id="testing" onclick="myFunction()">Click</button></div>
-<script>
-    
-function myFunction() {
-  var txt;
-  if (confirm("Click to redirect")) {
-    txt = "You pressed OK!";
-    console.log("You pressed confirm")
-    alert("REDIRECTING IN 5 SECS... *click ok to proceed*")
-    setTimeout(function () {
-        window.location.replace("https://youtube.com");
-        
-}, 5000);
-    
-  } else {
-    txt = "You pressed Cancel!";
-    console.log(txt)
-    
+  <button id="testing" onclick="myFunction()">Click</button></div>
+  <script>
+      
+  function myFunction() {
+    var txt;
+    if (confirm("Click to redirect")) {
+      txt = "You pressed OK!";
+      console.log("You pressed confirm")
+      alert("REDIRECTING IN 5 SECS... *click ok to proceed*")
+      setTimeout(function () {
+          window.location.replace("https://youtube.com");
+          
+  }, 5000);
+      
+    } else {
+      txt = "You pressed Cancel!";
+      console.log(txt)
+      
+    }
+    var txt = document.getElementById("demo")
   }
-  var txt = document.getElementById("demo")
-}
+  
+  </script>
+  
+  
+  </head>
+    
+   
+    
 
-</script>
 
+</div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+
+    
 </head>
-<h1>extras</h1>
     
 </body>
 </html>
