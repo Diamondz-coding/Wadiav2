@@ -35,9 +35,11 @@ img{
     position: sticky;
 }
 nav {
-    
-    
+    visibility: visible;
 }
+    
+    
+
 nav ul {
     float: right;
     list-style: none;
@@ -78,4 +80,10 @@ nav li {
  *{
      background-color: 111111;;}
     
+}
+#test {
+    margin-top: 60px;
+}
+#tss {
+    font-size: 100px;
 }
