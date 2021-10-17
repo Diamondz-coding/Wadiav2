@@ -247,6 +247,7 @@ input:checked[type="checkbox"]::before {
     display: inline;
     
 }
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 label {
     position: absolute;
     color: white;
@@ -266,3 +267,37 @@ label {
 
     
 }
+#wiph1{
+    margin-top: 340px;
+    z-index: 100;
+    position: absolute;
+    color: black;
+    transition: 2s;
+    margin-left: 150px;
+
+}
+
+#wipimg {
+    margin-top: 300px;
+   position: absolute;
+   
+    
+    padding-right: 400px;
+    transition: 2s;
+    border-radius: 5px;
+    border: 5px solid #555;
+    background-color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+#dismiss {
+    font-size: 7px;
+    
+    position: absolute;
+    margin-top: 395px;
+    margin-left: 460px;
+    text-decoration: underline;
+    color: black;
+
+}
+
+

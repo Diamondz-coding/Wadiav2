@@ -17,7 +17,7 @@
    
     <div class="container">
         <div id = "logo">
-        <a href="#"><img src="logo.ico" alt="Your browser doesn't support this image."></a>
+        <a href="index.html"><img src="logo.ico" alt="Your browser doesn't support this image."></a>
     </div>
     
     <nav>
@@ -29,6 +29,14 @@
           
           
         </style>
+        <script>
+ var PixelFind = window.innerWidth
+ var PixelFind2 = window.outerHeight
+ console.log("Pixels = " + PixelFind + "X" + PixelFind2)
+
+
+
+        </script>
 
         <ul>
           <li id="extras"><a href="extras.html">Extras</a></li>
@@ -65,7 +73,7 @@
     
 </div>
 
-  <h1>extras</h1>
+  
 <script></script>
 
 
@@ -100,8 +108,30 @@
     
   
   </script>
+  <div id="WIPPR">
+  <h1 id="wiph1">This website is a WIP!</h1>
+  <img id="wipimg" src="hammer.png" alt="your brower doesn't support this image :(">
+ <a id="dismiss" href="javascript:myFunc(), Fadeout()"> <h1>Close</h1></a> 
+ <script>
+     function Fadeout() {
+        const sel = document.querySelector('#WIPPR')
+        sel.style.opacity = '0'
+     }
+     let le = document.querySelector("#wipimg")
+     let io = document.querySelector("#wiph1")
+     let er = document.querySelector("#dismiss")
+     function myFunc() {
+         le.style.visibility = "hidden"
+         io.style.visibility = "hidden"
+         er.style.visibility = "hidden"
+         
+
+     }
+
+     
+ </script>
   
-  
+</div>
   
   </head>
     
@@ -113,6 +143,7 @@
 <div id="particles-js"></div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
+
 
 
     

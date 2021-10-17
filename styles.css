@@ -329,7 +329,8 @@ body{
 }
 @media only screen and (max-width:700px) { /*/ <--- changes things when screen is smaller /*/
    body {
-       
+       overflow-y: scroll;
+       overflow-y: hidden;
    }
 #testing {
     align-content: center;
