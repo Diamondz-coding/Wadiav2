@@ -108,19 +108,27 @@
     
   
   </script>
+  <script type="module" src="js-cookie-master/"></script>>
+  
   <script>
-      el.style.visibility = "hidden"
+      let x = document.cookie
+      if(x = "SHOWNALERT=TRUE") {
+        console.log(x + " <----- (x)")
+        console.log("Shownalert will not show again")
+      } else {
+      
+      
+      setTimeout(function(){ alert("This website is a work in progress, appologies for any errors"); }, 1000)
+      document.cookie = "SHOWNALERT=TRUE"
+      }
+
+      
+      
   </script>
-  <script>
-      
-    
-      
-     
-   
-      setTimeout(function(){ alert("This website is a work in progress, appologies for any errors"); }, 1000);
-      
-      
-  </script>
+
+
+  <script>  src="https://cdn.jsdelivr.net/combine/npm/js-cookie@3.0.1/index.min.js,npm/js-cookie@3.0.1"</script>
+  
   
   </head>
     
