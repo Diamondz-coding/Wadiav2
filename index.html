@@ -13,7 +13,7 @@
     <title>Wadia</title>
 </head>
 <head>
-<body>
+<body onload="CheckCookie()">
    
     <div class="container">
         <div id = "logo">
@@ -108,22 +108,45 @@
     
   
   </script>
-  <script type="module" src="js-cookie-master/"></script>>
+  <script>
+    
+  </script>
   
   <script>
-      let x = document.cookie
-      if(x = "SHOWNALERT=TRUE") {
-        console.log(x + " <----- (x)")
-        console.log("Shownalert will not show again")
-      } else {
+    let cookiecheck = document.cookie;
+    setTimeout(function(){ console.log(cookiecheck); }, 3000);
+    function CookieChecking() {
       
       
-      setTimeout(function(){ alert("This website is a work in progress, appologies for any errors"); }, 1000)
-      document.cookie = "SHOWNALERT=TRUE"
+      if (cookiecheck = "WIPSHOW=FALSE" )  {
+        console.log("ok")
+        alert("This website is a WIP, sorry for mistakes/errors")
+        
+        
+        document.cookie = "WIPSHOW=TRUE"
+      }else if (cookiecheck = "WIPSHOW=TRUE")  {
+        console.log("cookie worked")
+        
+        
+        
+      }else if(cookiecheck == null) {
+        alert("COOKIE NULL")
       }
+      
+      }
+       
+    
+     
+      
 
       
       
+  </script>
+  <script>
+    console.log(cookiecheck)
+    if (cookiecheck == null) {
+      console.log("?")
+    }
   </script>
 
 
