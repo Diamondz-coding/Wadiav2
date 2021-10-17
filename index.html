@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="diamond.png" type="image/icon type">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,77 +21,103 @@
     </div>
     
     <nav>
-        <style>
-            #index {
-              text-decoration: underline;
-            }
-            
-            
-          </style>
         
+        <style>
+          #index {
+            text-decoration: underline;
+          }
+          
+          
+        </style>
 
         <ul>
-            <li id="index"><a href="index.html">Home</a></li>
+          <li id="extras"><a href="extras.html">Extras</a></li>
+          <li id="index"><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="extras.html">Extras</a></li>
+           <div class="toggleBox">
+             <div class="toggle">
+               <input type="checkbox" id="CHECKER" onclick="DisableParticles()">
+               <label for="" class="onbtn" >on</label>
+               <label for="" class="ofbtn">off</label>
+               <script>
+                 function DisableParticles() {
+  
+  var checkBox = document.getElementById("CHECKER");
+  // Get the output text
+  var text = document.getElementById("text");
+  let el = document.querySelector("#particles-js")
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    console.log("True")
+    el.style.visibility = "hidden"
+  } else {
+   console.log("False")
+    el.style.visibility = "visible"
+  }
+}
+               </script>
+             </div>
+           </div>
         </ul>
     </nav>
     
 </div>
-<script id="pixelcheck">window.addEventListener("resize", function() {
-    if (window.matchMedia("(min-width: 500px)").matches) {
-      console.log("Screen width is at least 500px")
-    } else {
-      confirm('This website is optimized for screens of which are >500px in width')
-    }
-  })</script>
+
+  <h1>extras</h1>
+<script></script>
 
 
 
 
-<div class="part"></div>
-<div id="particles-js"></div>
+<div class="part">
+
 <div class="testbutton">
-    <button id="testing" onclick="myFunction()">Click</button></div>
-    <script>
-      let el = document.querySelector("#particles-js")
-      
-    function myFunction() {
-      var txt;
-      if (confirm("Remove Particles?")) {
-        txt = "You pressed OK!";
-        console.log("confirmed")
-        el.style.visibility = "hidden"
-        
-      
-       
-  
-        
-      } else {
-        txt = "canceled";
-        console.log(txt)
-        el.style.visibility = "visible"
-        
-      }
-      var txt = document.getElementById("demo")
-    } 
+  <button id="testing" onclick="myFunction()">Click</button></div>
+  <script>
+    let el = document.querySelector("#particles-js")
+    
+  function myFunction() {
+    var txt;
+    if (confirm("Remove Particles?")) {
+      txt = "You pressed OK!";
+      console.log("confirmed")
+      el.style.visibility = "hidden"
       
     
-    </script>
+     
+
+      
+    } else {
+      txt = "canceled";
+      console.log(txt)
+      el.style.visibility = "visible"
+      
+    }
+    var txt = document.getElementById("demo")
+  } 
+    
+  
+  </script>
+  
+  
+  
+  </head>
     
    
     
 
 
 </div>
+<div id="particles-js"></div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
 
 
-
     
 </head>
-    
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
