@@ -67,10 +67,18 @@ body{
     overflow: hidden;
     
 }
-@media only screen and (max-width:1000px) { /*/ <--- changes things when screen is smaller /*/
+@media only screen and (max-width:700px) { /*/ <--- changes things when screen is smaller /*/
    body {
        
    }
+#testing {
+    align-content: center;
+    
+    float: left;
+    position: relative;
+    margin-left: -500px;
+
+}
    
    .part {
     background-color: #111111;
@@ -80,11 +88,14 @@ body{
 }
 nav li {
     padding-right: 30px;
+    font-size: medium;
 }
+
+};
  *{
      background-color: 111111;;}
     
-}
+
 #test {
     margin-top: 60px;
 }
@@ -133,3 +144,54 @@ bottom: 600px;
     bottom: 500px;
     left: 280%;
 }
+@media only screen and (max-width: 480px){
+    #testing {
+        position: relative;
+        float: left;
+        align-content: center;margin-right: 1px;
+        font-size: small;
+        margin-left: 0px;
+
+
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    img {
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 400px){
+    nav ul li {
+        margin-top: 10px;
+        font-size: small;
+        font-style: italic;
+
+    }
+    img {
+        height: 90px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 799px){
+nav ul li {
+    font-size: 15px
+}
+img {
+height: 100px;
+margin-top: 1px;
+}
+}
+@media only screen and (max-width: 722px){
+img {
+    height: 70px;
+    margin-top: 10px;
+
+}
+nav ul li {
+   
+}
+
+}
+
+

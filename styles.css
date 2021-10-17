@@ -196,24 +196,11 @@ body{
     overflow: hidden;
     
 }
-@media only screen and (max-width:1000px) { /*/ <--- changes things when screen is smaller /*/
-   body {
-       
-   }
-   
-   .part {
-    background-color: #111111;
-}
-#particles-js {
-    visibility: hidden;
-}
-nav li {
-    padding-right: 30px;
-}
- *{
-     background-color: 111111;;}
+
+
+
     
-}
+
 #test {
     margin-top: 60px;
 }
@@ -262,4 +249,207 @@ bottom: 600px;
     bottom: 500px;
     left: 280%;
 }
+@media only screen and (max-width: 1041px){
+    #testing {
+        margin-left: -500px;
+        float: left;
+        position: relative;
+    }
+
+}
+
+a:link{
+    color: black;
+}
+a:visited {
+    color: black;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    
+    
+    
+}
+.container {
+    width: 100%;
+    height: 100px;
+    background-color: #55b59b;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    
+    background-color: #00a087;
+
+}
+img{
+    height: 120px;
+    margin-top: -20px;
+    float: left;
+    position: sticky;
+}
+nav {
+    visibility: visible;
+}
+    
+    
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    position: sticky;
+}
+nav li{
+    display: inline-block;
+    padding-right: 110px;
+    padding-top: 30px;
+    text-decoration: none;
+    color: #505d61;
+    font-size: 20px;
+    position: sticky;
+
+}
+body{
+    position: absolute;
+    width: 100%;
+    background-color: #111111;
+    overflow: hidden;
+    
+}
+@media only screen and (max-width:700px) { /*/ <--- changes things when screen is smaller /*/
+   body {
+       
+   }
+#testing {
+    align-content: center;
+    
+    float: left;
+    position: relative;
+    margin-left: -500px;
+
+}
+   
+   .part {
+    background-color: #111111;
+}
+#particles-js {
+    visibility: hidden;
+}
+nav li {
+    padding-right: 30px;
+    font-size: medium;
+}
+
+};
+ *{
+     background-color: 111111;;}
+    
+
+#test {
+    margin-top: 60px;
+}
+#tss {
+    font-size: 100px;
+}
+.testbutton {
+    font-family: 'Roboto', sans-serif;
+    size: 500px;
+    display: flex;
+    text-align: center;
+    width: 300px;
+}
+#particles-js{
+    width: 100% !important;
+    height: 1000px !important;
+    overflow-y: hidden !important;
+    
+     
+     background-color: #111111;
+     overflow-x: hidden !important;
+    
+     margin-top: 40px;
+    
+ }
+#testing {
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    align-items: center;
+    border: white;
+    cursor: pointer;
+    margin-top: 10%;
+    left: 280%;
+    position: relative;
+    border-radius: 200px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+position: relative;
+bottom: 600px;
+    
+}
+#TESTT {
+    size: 400px;
+    bottom: 500px;
+    left: 280%;
+}
+@media only screen and (max-width: 480px){
+    #testing {
+        position: relative;
+        float: left;
+        align-content: center;margin-right: 1px;
+        font-size: small;
+        margin-left: 0px;
+
+
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    img {
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 400px){
+    nav ul li {
+        margin-top: 10px;
+        font-size: small;
+        font-style: italic;
+
+    }
+    img {
+        height: 90px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 799px){
+nav ul li {
+    font-size: 15px
+}
+img {
+height: 100px;
+margin-top: 1px;
+}
+}
+@media only screen and (max-width: 722px){
+img {
+    height: 70px;
+    margin-top: 10px;
+
+}
+
+
+}
+
+
 
