@@ -52,6 +52,33 @@
 
 <div class="part"></div>
 <div id="particles-js"></div>
+<div class="testbutton">
+    <button id="testing" onclick="myFunction()">Click</button></div>
+    <script>
+      let el = document.querySelector("#particles-js")
+      
+    function myFunction() {
+      var txt;
+      if (confirm("Remove Particles?")) {
+        txt = "You pressed OK!";
+        console.log("confirmed")
+        el.style.visibility = "hidden"
+        
+      
+       
+  
+        
+      } else {
+        txt = "canceled";
+        console.log(txt)
+        el.style.visibility = "visible"
+        
+      }
+      var txt = document.getElementById("demo")
+    } 
+      
+    
+    </script>
     
    
     
@@ -60,6 +87,7 @@
 </div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
+
 
 
     

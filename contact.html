@@ -21,19 +21,18 @@
     </div>
     
     <nav>
-        
         <style>
-            #contact {
+            #index {
               text-decoration: underline;
             }
             
             
           </style>
+        
 
         <ul>
-            <li id="contact"><a href="contact.html">Contact</a></li>
-            <li><a href="index.html">Home</a></li>
-            
+            <li id="index"><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="extras.html">Extras</a></li>
         </ul>
@@ -53,6 +52,33 @@
 
 <div class="part"></div>
 <div id="particles-js"></div>
+<div class="testbutton">
+    <button id="testing" onclick="myFunction()">Click</button></div>
+    <script>
+      let el = document.querySelector("#particles-js")
+      
+    function myFunction() {
+      var txt;
+      if (confirm("Remove Particles?")) {
+        txt = "You pressed OK!";
+        console.log("confirmed")
+        el.style.visibility = "hidden"
+        
+      
+       
+  
+        
+      } else {
+        txt = "canceled";
+        console.log(txt)
+        el.style.visibility = "visible"
+        
+      }
+      var txt = document.getElementById("demo")
+    } 
+      
+    
+    </script>
     
    
     
@@ -61,6 +87,7 @@
 </div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
+
 
 
     
