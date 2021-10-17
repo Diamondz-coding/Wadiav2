@@ -211,7 +211,7 @@ nav ul li {
 input[type="checkbox"] {
     width: 100px;
     height: 40px;
-    background-color: black;
+    background-color: #111111;
     -webkit-appearance: none;
     border-radius: 20px;
     outline: none;
@@ -221,7 +221,7 @@ input[type="checkbox"] {
     transition: 0s;
 }
 input:checked[type="checkbox"]{
-    background-color: black;
+    background-color: #111111;
     transition: 0s;
 }
 input[type="checkbox"]::before {
