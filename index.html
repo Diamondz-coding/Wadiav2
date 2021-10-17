@@ -108,28 +108,19 @@
     
   
   </script>
-  <div id="WIPPR">
-  <h1 id="wiph1">This website is a WIP!</h1>
-  <img id="wipimg" src="hammer.png" alt="your brower doesn't support this image :(">
- <a id="dismiss" href="javascript:myFunc()"> <h1>Close</h1></a> 
- <script>
+  <script>
+      el.style.visibility = "hidden"
+  </script>
+  <script>
+      
+    
+      
      
-     
-     let le = document.querySelector("#wipimg")
-     let io = document.querySelector("#wiph1")
-     let er = document.querySelector("#dismiss")
-     function myFunc() {
-         le.style.visibility = "hidden"
-         io.style.visibility = "hidden"
-         er.style.visibility = "hidden"
-         
-
-     }
-
-     
- </script>
-  
-</div>
+   
+      setTimeout(function(){ alert("This website is a work in progress, appologies for any errors"); }, 1000);
+      
+      
+  </script>
   
   </head>
     
