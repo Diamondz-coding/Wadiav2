@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 a:link{
     color: black;
 }
@@ -255,7 +255,7 @@ input:checked[type="checkbox"]::before {
     display: inline;
     
 }
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
 label {
     position: absolute;
     color: white;
