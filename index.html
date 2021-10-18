@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="diamond.png" type="image/icon type">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,22 +13,10 @@
     <title>Wadia</title>
 </head>
 <head>
-<body onload="CheckCookie()">
+<body onclick="window.location.href='home.html'">
    
-    <div class="container">
-        <div id = "logo">
-        <a href="index.html"><img src="logo.ico" alt="Your browser doesn't support this image."></a>
-    </div>
-    
-    <nav>
+   
         
-        <style>
-          #index {
-            text-decoration: underline;
-          }
-          
-          
-        </style>
         <script>
  var PixelFind = window.innerWidth
  var PixelFind2 = window.outerHeight
@@ -38,121 +26,10 @@
 
         </script>
 
-        <ul>
-          <li id="extras"><a href="extras.html">Extras</a></li>
-          <li id="index"><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-           <div class="toggleBox">
-             <div class="toggle">
-               <input type="checkbox" id="CHECKER" onclick="DisableParticles()">
-               <label for="" class="onbtn" >on</label>
-               <label for="" class="ofbtn">off</label>
-               <script>
-                 function DisableParticles() {
-  
-  var checkBox = document.getElementById("CHECKER");
-  // Get the output text
-  var text = document.getElementById("text");
-  let el = document.querySelector("#particles-js")
-
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    console.log("Hiding Particles.js")
-    el.style.visibility = "hidden"
-  } else {
-   console.log("Showing Particles.js")
-    el.style.visibility = "visible"
-  }
-}
-               </script>
-             </div>
-           </div>
-        </ul>
-    </nav>
-    
-</div>
-
-  
-<script></script>
-
-
-
-
-<div class="part">
-
-<div class="testbutton">
-  <button id="testing" onclick="myFunction()">Click</button></div>
-  <script>
-    let el = document.querySelector("#particles-js")
-    
-  function myFunction() {
-    var txt;
-    if (confirm("Remove Particles?")) {
-      txt = "You pressed OK!";
-      console.log("confirmed")
-      el.style.visibility = "hidden"
-      
-    
-     
-
-      
-    } else {
-      txt = "canceled";
-      console.log(txt)
-      el.style.visibility = "visible"
-      
-    }
-    var txt = document.getElementById("demo")
-  } 
-    
-  
-  </script>
-  <script>
-    
-  </script>
-  
-  <script>
-    let cookiecheck = document.cookie;
-    setTimeout(function(){ console.log(cookiecheck); }, 3000);
-    function CookieChecking() {
-      
-      
-      if (cookiecheck = "WIPSHOW=FALSE" )  {
-        console.log("ok")
-        alert("This website is a WIP, sorry for mistakes/errors")
-        
-        
-        document.cookie = "WIPSHOW=TRUE"
-      }else if (cookiecheck = "WIPSHOW=TRUE")  {
-        console.log("cookie worked")
-        
-        
-        
-      }else if(cookiecheck == null) {
-        alert("COOKIE NULL")
-      }
-      
-      }
-       
-    
-     
-      
-
-      
-      
-  </script>
-  <script>
-    console.log(cookiecheck)
-    if (cookiecheck == null) {
-      console.log("?")
-    }
-  </script>
-
 
   <script>  src="https://cdn.jsdelivr.net/combine/npm/js-cookie@3.0.1/index.min.js,npm/js-cookie@3.0.1"</script>
   
-  
+  <h1>Click anywhere to enter</h1>
   </head>
     
    
