@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 a:link{
     color: black;
 }
@@ -50,7 +50,7 @@ img{
 nav {
     visibility: visible;
     display: inline-block;
-    float: right;
+    
 }
 
     
@@ -86,9 +86,6 @@ body{
     
 }
 @media only screen and (max-width:700px) { /*/ <--- changes things when screen is smaller /*/
-   body {
-       
-   }
    
 
 #testing {
@@ -209,9 +206,7 @@ img {
     margin-top: 10px;
 
 }
-nav ul li {
-   
-}
+
 
 }
 
@@ -318,7 +313,7 @@ margin-left: -20px;
 box-shadow: 1px 1px 15px 1px #000000;
 transition: 1s;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
 #cleantext h1 {
     margin-left: -225px;
     font-family: 'Roboto', sans-serif;
