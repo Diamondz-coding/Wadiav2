@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="diamond.png" type="image/icon type">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <title>Wadia</title>
+</head>
+<head>
+<body onload="CheckCookie()">
+   
+    <div class="container">
+        <div id = "logo">
+        <a href="index.html"><img src="logo.ico" alt="Your browser doesn't support this image."></a>
+    </div>
+    
+    
+
+  
+<script></script>
+
+
+
+
+<div class="part">
+
+<div class="testbutton">
+  <button id="testing" onclick="myFunction()">Click</button></div>
+  <script>
+    let el = document.querySelector("#particles-js")
+    
+  function myFunction() {
+    var txt;
+    if (confirm("Remove Particles?")) {
+      txt = "You pressed OK!";
+      console.log("confirmed")
+      el.style.visibility = "hidden"
+      
+    
+     
+
+      
+    } else {
+      txt = "canceled";
+      console.log(txt)
+      el.style.visibility = "visible"
+      
+    }
+    var txt = document.getElementById("demo")
+  } 
+    
+  
+  </script>
+  <script>
+    
+  </script>
+  
+  <script>
+    let cookiecheck = document.cookie;
+    setTimeout(function(){ console.log(cookiecheck); }, 3000);
+    function CookieChecking() {
+      
+      
+      if (cookiecheck = "WIPSHOW=FALSE" )  {
+        console.log("ok")
+        alert("This website is a WIP, sorry for mistakes/errors")
+        
+        
+        document.cookie = "WIPSHOW=TRUE"
+      }else if (cookiecheck = "WIPSHOW=TRUE")  {
+        console.log("cookie worked")
+        
+        
+        
+      }else if(cookiecheck == null) {
+        alert("COOKIE NULL")
+      }
+      
+      }
+       
+    
+     
+      
+
+      
+      
+  </script>
+  <script>
+    console.log(cookiecheck)
+    if (cookiecheck == null) {
+      console.log("?")
+    }
+  </script>
+
+
+  <script>  src="https://cdn.jsdelivr.net/combine/npm/js-cookie@3.0.1/index.min.js,npm/js-cookie@3.0.1"</script>
+  
+  
+  </head>
+    
+   
+    
+
+
+</div>
+<div id="particles-js"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+
+
+    
+</head>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
