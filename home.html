@@ -19,6 +19,15 @@
         <div id = "logo">
         <a href="index.html"><img src="logo.ico" alt="Your browser doesn't support this image."></a>
     </div>
+    <script>
+        var pix = screen.innerWidth
+        if (pix <= 930) {
+            var a = document.getElementById("checkbox")
+            a.style.visibility = "hidden";
+        } else {
+            console.log("m")
+        }
+    </script>
     
     <nav>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -33,6 +42,9 @@
  var PixelFind = window.innerWidth
  var PixelFind2 = window.outerHeight
  console.log("Pixels = " + PixelFind + "X" + PixelFind2)
+ if (PixelFind <= 930) {
+     a.style.visibility = "hidden"
+ }
 
 
 
