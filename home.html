@@ -20,7 +20,58 @@
         <a href="index.html"><img src="logo.ico" alt="Your browser doesn't support this image."></a>
     </div>
     
+    <nav>
+        
+        <style>
+          #index {
+            text-decoration: underline;
+          }
+          
+          
+        </style>
+        <script>
+ var PixelFind = window.innerWidth
+ var PixelFind2 = window.outerHeight
+ console.log("Pixels = " + PixelFind + "X" + PixelFind2)
+
+
+
+        </script>
+
+        <ul>
+          <li id="extras"><a href="extras.html">Extras</a></li>
+          <li id="index"><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+           <div class="toggleBox">
+             <div class="toggle">
+               <input type="checkbox" id="CHECKER" onclick="DisableParticles()">
+               <label for="" class="onbtn" >on</label>
+               <label for="" class="ofbtn">off</label>
+               <script>
+                 function DisableParticles() {
+  
+  var checkBox = document.getElementById("CHECKER");
+  // Get the output text
+  var text = document.getElementById("text");
+  let el = document.querySelector("#particles-js")
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    console.log("Hiding Particles.js")
+    el.style.visibility = "hidden"
+  } else {
+   console.log("Showing Particles.js")
+    el.style.visibility = "visible"
+  }
+}
+               </script>
+             </div>
+           </div>
+        </ul>
+    </nav>
     
+</div>
 
   
 <script></script>
