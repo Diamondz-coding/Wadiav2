@@ -36,13 +36,18 @@
 
   <script>  src="https://cdn.jsdelivr.net/combine/npm/js-cookie@3.0.1/index.min.js,npm/js-cookie@3.0.1"</script>
   
-  <h1>Click anywhere to enter</h1>
+  <h1>Press any key to enter</h1>
   </head>
     
    
     
-
-
+<h1 id="copyright">© Copyright 2021-</h1>
+<script>
+    document.addEventListener("keypress", function(event) {
+	console.log("Keydown, Redirecting...")
+    window.location.replace("https://wadia.cloud/home.html");
+});
+</script>
 </div>
 <div id="particles-js"></div>
 <script src="particles.js"></script>
