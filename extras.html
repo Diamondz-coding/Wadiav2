@@ -13,8 +13,9 @@
     <title>Wadia</title>
 </head>
 <head>
-<body>
- 
+<body onload="TimeoutParticles(); LoadParticles1()">
+  
+   
     <div class="container">
         <div id = "logo">
         <a href="#"><img src="imgs/logo.ico" alt="Your browser doesn't support this image."></a>
@@ -29,11 +30,10 @@
           
           
         </style>
-       
-
+        
         <ul>
           <li id="extras"><a href="extras.html">Extras</a></li>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="home.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
            <div class="toggleBox">
@@ -72,6 +72,7 @@
 
 
 
+<div class="part">
 
 <div class="testbutton">
   <button id="testing" onclick="myFunction()">Click</button></div>
@@ -133,6 +134,18 @@
   });
 
 
+</script>
+<script>
+  particles = document.querySelector("#particles-js")
+  function TimeoutParticles() {
+    particles.style.visibility = "hidden";
+    console.log("Loading particles...")
+  }
+  function LoadParticles1() {
+   
+    setTimeout(function(){ particles.style.visibility = "visible"; console.log('Particles.js Loaded') }, 1000);
+    
+  }
 </script>
 
 

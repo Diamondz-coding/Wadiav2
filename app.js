@@ -19,7 +19,7 @@ particlesJS('particles-js',
       "value": 80,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 315.65905665290904
       }
     },
     "color": {
@@ -69,7 +69,7 @@ particlesJS('particles-js',
     },
     "move": {
       "enable": true,
-      "speed": 35.275065339041504,
+      "speed": 22.096133965703636,
       "direction": "bottom-right",
       "random": false,
       "straight": false,
