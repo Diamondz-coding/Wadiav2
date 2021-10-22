@@ -13,7 +13,7 @@
     <title>Wadia</title>
 </head>
 <head>
-<body onload="TimeoutParticles(); LoadParticles1()">
+<body>
   
    
     <div class="container">
@@ -72,7 +72,7 @@
 
 
 
-<div class="part">
+
 
 <div class="testbutton">
   <button id="testing" onclick="myFunction()">Click</button></div>
@@ -114,7 +114,12 @@
 <div id="particles-js"></div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
+<style>
 
+  #particles-js {
+    height: 1000px;
+  }
+</style>
 <script>
   particles = document.querySelector("#particles-js")
   function TimeoutParticles() {

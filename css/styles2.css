@@ -82,10 +82,43 @@ body{
     
     
 }
+@media only screen and (max-width:830px) {
+
+.toggleBox {
+    display: none;
+}
+}
+@media only screen and (max-width:830px) {
+.toggleBox {
+    visibility: visible;
+}
+.container img {
+    display: none;
+}
+}
+
+@media only screen and (max-width:1000px) {
+ul li {
+    font-size: 15px;
+}
+.container img {
+    height: 75px;
+    margin-top: 10px;
+}
+}
+@media only screen and (max-width:520px) {
+.toggleBox {
+    display: none;
+}
+.container img {
+    display: none;
+}
+ul li {
+    font-size: 9px;
+}
+}
 @media only screen and (max-width:700px) { /*/ <--- changes things when screen is smaller /*/
-   body {
-       
-   }
+ 
 #testing {
     align-content: center;
     
@@ -98,9 +131,7 @@ body{
    .part {
     background-color: #111111;
 }
-#particles-js {
-    visibility: hidden;
-}
+
 nav li {
     padding-right: 30px;
     font-size: medium;
@@ -203,9 +234,8 @@ img {
     margin-top: 10px;
 
 }
-nav ul li {
-   
-}
+
+
 
 }
 
