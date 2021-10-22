@@ -5,8 +5,11 @@ body {
     overflow: hidden;
 }
 #particles-js {
+    width: 100% !important;
+    height: 3000px !important;
+    position: relative;
 
-position: relative;
+
 }
 h1 {
     position: absolute;
@@ -17,9 +20,30 @@ h1 {
     font-size: 50px;
     font-weight: 1000;
 }
-#copyright {
-    margin-top: 1060px;
-    font-size: 10px;
-    margin-left: -10px;
-    margin-right: 100px;
+
+@media only screen and (max-width: 1360px){
+    h1 {
+        
+        margin-left: 500px;
+    }
+
+
 }
+
+    @media only screen and (max-width: 1060px){
+        h1 {
+            margin-left: 300px;
+        }
+
+    }
+    @media only screen and (max-width: 800px){
+h1 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+    }
+    @media only screen and (max-width: 350px){
+h1 {
+    font-size: 20px;
+}
+    }
