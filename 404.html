@@ -14,7 +14,6 @@
 </head>
 <head>
 <body>
-  
    
     <div class="container">
         <div id = "logo">
@@ -24,18 +23,20 @@
     <nav>
         
         <style>
-          #extras {
+          #about {
             text-decoration: underline;
+            
+            
           }
           
           
         </style>
-        
+
         <ul>
           <li id="extras"><a href="extras.html">Extras</a></li>
           <li><a href="home.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+            <li id="about"><a href="about.html">About</a></li>
            <div class="toggleBox">
              <div class="toggle">
                <input type="checkbox" id="CHECKER" onclick="DisableParticles()">
@@ -52,10 +53,10 @@
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
     console.log("True")
-    el.style.visibility = "visible"
+    el.style.visibility = "hidden"
   } else {
    console.log("False")
-    el.style.visibility = "hidden"
+    el.style.visibility = "visible"
   }
 }
                </script>
@@ -66,7 +67,7 @@
     
 </div>
 
-  <h1>Note: this website is a WIP</h1>
+  <h1>extras</h1>
 <script></script>
 
 
@@ -114,24 +115,7 @@
 <div id="particles-js"></div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
-<style>
 
-  #particles-js {
-    height: 1000px;
-  }
-</style>
-<script>
-  particles = document.querySelector("#particles-js")
-  function TimeoutParticles() {
-    particles.style.visibility = "hidden";
-    console.log("Loading particles...")
-  }
-  function LoadParticles1() {
-   
-    setTimeout(function(){ particles.style.visibility = "visible"; console.log('Particles.js Loaded') }, 1000);
-    
-  }
-</script>
 
 
     
