@@ -190,6 +190,8 @@ bottom: 600px;
     bottom: 500px;
     left: 280%;
 }
+
+}
 @media only screen and (max-width: 480px){
     #testing {
         position: relative;
@@ -395,6 +397,22 @@ label {
           transition-delay: 0s !important;
         }
       }
+    
+      @media only screen and (max-width: 1070px){
+        .glitch {
+            margin-left: 300px;
+        }
+    }
+    @media only screen and (max-width: 1070px){
+.glitch {
+    font-size: 25px;
+}
+    }
       
+    @media only screen and (max-width: 600px){
+.glitch  {
+    margin-left: 50px;
+}
+    }
 
 
