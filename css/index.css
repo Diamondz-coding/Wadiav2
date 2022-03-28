@@ -9,6 +9,7 @@ body {
     width: 100% !important;
     height: 3000px !important;
     position: relative;
+    cursor: pointer;
 
 
 }
@@ -23,7 +24,14 @@ h1 {
     transition-timing-function: ease-in;
     transition: 1s;
 }
+@media only screen and (max-width: 4440px){
+  h1 {
+      margin-top: 600px;
+      margin-left: 1500px;
+  }
 
+
+}
 
 
 

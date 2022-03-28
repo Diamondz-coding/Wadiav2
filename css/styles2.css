@@ -49,6 +49,7 @@ nav {
     visibility: visible;
     display: inline-block;
     float: right;
+    
 }
 
     
@@ -154,10 +155,11 @@ nav li {
     display: flex;
     text-align: center;
     width: 300px;
+    margin-bottom: -40px;
 }
 #particles-js{
     width: 100% !important;
-    height: 1000px !important;
+    height: 1200px !important;
     overflow-y: hidden !important;
     
      
@@ -165,6 +167,8 @@ nav li {
      overflow-x: hidden !important;
     
      margin-top: 40px;
+     cursor: crosshair;
+     
     
  }
 #testing {
@@ -191,7 +195,7 @@ bottom: 600px;
     left: 280%;
 }
 
-}
+
 @media only screen and (max-width: 480px){
     #testing {
         position: relative;
