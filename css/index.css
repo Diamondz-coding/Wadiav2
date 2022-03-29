@@ -25,6 +25,7 @@ h1 {
     transition-timing-function: ease-in;
     transition: 0.2s;
     font-family: 'Indie Flower', cursive;
+    text-align: center;
 }
 @media only screen and (max-width: 4440px){
   h1 {
@@ -61,6 +62,22 @@ h1 {
         
         margin-left: 500px;
     }
+
+
+}
+@media only screen and (max-width: 2085px){
+  h1 {
+      
+      margin-left: 500px;
+  }
+
+
+}
+@media only screen and (max-width: 885px){
+  h1 {
+      
+      margin-left: 100px;
+  }
 
 
 }

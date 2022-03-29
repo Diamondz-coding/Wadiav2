@@ -68,7 +68,7 @@ nav li{
     padding-right: 110px;
     padding-top: 30px;
     text-decoration: none;
-    color: #111111;
+    color: #1111;
     font-size: 20px;
     position: sticky;
     font-weight: 100;
@@ -77,7 +77,7 @@ nav li{
 body{
     position: absolute;
     width: 100%;
-    background-color: #111111;
+    background-color: #0d0e0f;
     overflow-x: hidden;
     scroll-behavior: smooth;
     
@@ -163,7 +163,7 @@ nav li {
     overflow-y: hidden !important;
     
      
-     background-color: #111111;
+     background-color: #0d0e0f;
      overflow-x: hidden !important;
     
      margin-top: 40px;
