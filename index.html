@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     
-    <title>Wadia</title>
+    <title>Harley?</title>
 </head>
 <head>
 <body onclick="window.location.href='home.html'">
@@ -21,6 +21,10 @@
  var PixelFind = window.innerWidth
  var PixelFind2 = window.outerHeight
  console.log("Pixels = " + PixelFind + "X" + PixelFind2)
+ var countcheck = 1;
+ 
+ 
+ 
 
  
 
@@ -34,7 +38,7 @@
         </script>
         <h1 class="glitch">
             
-            Press any key to enter
+            click here to enter
             
           </h1>
 
@@ -48,9 +52,13 @@
     
 
 <script>
-    document.addEventListener("keypress", function(event) {
+  document.addEventListener("keypress", function(event) {
 	console.log("Keydown, Redirecting...")
-    window.location.replace("home.html");
+  const timeotu = setTimeout(200) 
+ function mytimeout() {
+   timeotu(window.location.replace("home.html"))
+ }
+    
 });
 </script>
 </div>
