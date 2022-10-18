@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/b.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<a href="https://google.com"><body>
+    <div class="wrapper">
+        <div class="typing-demo">
+    <p id="message"><p>
+    <p id="continue"></p>
+    </div>
+</div>
+        <script>     
+        var quoteArray = ["FINDING COUNTRY..."];
+        var textPosition = 0; 
+        var speed = 100;
+       
+   
+       </script>
+        
+            
+    <script>
+        fetch('https://api.ipregistry.co/?key=stuw58ch515zzuwy')
+       .then(function (response) {
+           return response.json();
+       })
+       .then(function (payload=txt) {
+        var changelocation = "> USER FROM" + payload.location.country.name
+        getmessage = document.getElementById("message").innerHTML = changelocation
+        i=0
+        while(i<=changelocation.length) {
+            console.log("1")
+            i+=1
+        }
+        getmessage = document.getElementById("message").innerHTML = "> USER FROM - " + payload.location.country.name  + "<span id='typing'>▮</span>"
+        setTimeout(() => { document.getElementById("message").innerHTML = "> USER FROM - " + payload.location.country.name, getcontinue = document.getElementById("continue").innerHTML = " -CLICK ANYWHERE TO CONTINUE- "  + "<span id='typing'>▮</span>"; }, 3000);
+        
+           
+        
+});
+
+       
+             </script>
+</body></a>
+</html>
