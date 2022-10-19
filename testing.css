@@ -25,18 +25,18 @@ body {
     font-family: 'Oxygen', sans-serif;
     padding-right: 25px;
     padding-left: 25px;
-    transition: 0.5s linear;
+    transition: 0.5s;
     
     
     
   }
-  #navbar a:hover {
-   transform: translate(4px,4px);
-   color: #f2f2f2;
-   border-radius: 4px;
-   background-color: #454545;
+ #navbar a:hover{
+    background-color: #f2f2f2;
+    color: #333;
+ }
+   
 
-  }
+  
 #1:hover{
     transition: .3s linear;
     padding-bottom: -50px;
