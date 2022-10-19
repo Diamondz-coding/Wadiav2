@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<a href="https://google.com"><body>
+<body>
     <div class="wrapper">
         <div class="typing-demo">
-    <p id="message"><p>
+    <p id="message">><p>
     <p id="continue"></p>
     </div>
 </div>
+
         <script>     
         var quoteArray = ["FINDING COUNTRY..."];
         var textPosition = 0; 
@@ -21,7 +22,7 @@
        
    
        </script>
-        
+        <a id="transition" href="https://google.com"></a>
             
     <script>
         fetch('https://api.ipregistry.co/?key=stuw58ch515zzuwy')
@@ -36,8 +37,8 @@
             console.log("1")
             i+=1
         }
-        getmessage = document.getElementById("message").innerHTML = "> USER FROM - " + payload.location.country.name  + "<span id='typing'>▮</span>"
-        setTimeout(() => { document.getElementById("message").innerHTML = "> USER FROM - " + payload.location.country.name, getcontinue = document.getElementById("continue").innerHTML = " -CLICK ANYWHERE TO CONTINUE- "  + "<span id='typing'>▮</span>"; }, 3000);
+        getmessage = document.getElementById("message").innerHTML = "> CONNECTION FROM " + payload.location.country.name  + ", " + payload.location.city + "<span id='typing'>▮</span>"
+        setTimeout(() => { document.getElementById("message").innerHTML = "> CONNECTION FROM " + payload.location.country.name + ", " + payload.location.city, getcontinue = document.getElementById("continue").innerHTML = "> CLICK ANYWHERE TO CONTINUE "  + "<span id='typing'>▮</span>"; }, 4000);
         
            
         
@@ -45,5 +46,5 @@
 
        
              </script>
-</body></a>
+</a></body>
 </html>
