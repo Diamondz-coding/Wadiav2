@@ -37,12 +37,41 @@ body {
    
 
   
-#1:hover{
-    transition: .3s linear;
-    padding-bottom: -50px;
-}
-  
 #particles-js{
-    height: 100vh;
+    height: 150vh;
     width: 100%;
+    
+}
+#footer{
+  background-color: #333;
+  bottom: -500px;
+  height: 1000px;
+  width: 100%;
+  margin-top: -980px;
+  
+  
+  transition: all 1.3s;
+  bottom: -1000px;
+}
+#footer h1{
+  transition: all 2s;
+  opacity: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#footer p{
+  transition: all 2s;
+  opacity: 0;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footer:hover h1{
+  margin-left: 50px;
+  animation: opace;
+  animation-duration: 3s;
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
