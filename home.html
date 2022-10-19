@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="jquery-3.6.0.min.js"></script>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,26 +37,7 @@ window.onscroll = function() {
  var PixelFind2 = window.outerHeight
  console.log("Pixels = " + PixelFind + "X" + PixelFind2)
         </script>
-        <script>
-     fetch('https://api.ipregistry.co/?key=tryout')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (payload) {
-        alert("Nice to see someone from "+payload.location.country.name + ', ' + payload.location.city);
-    });
-    var i = 0;
-    var txt = payload.location.country.name + ", " + payload.location.city; /* The text */
-    var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-    function typeWriter() {
-    if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
+        
           
 
         
