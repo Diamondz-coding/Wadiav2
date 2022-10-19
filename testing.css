@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #f1f1f1;
-    font-family: Arial, Helvetica, sans-serif;
+    
   }
   
   #navbar {
@@ -10,24 +10,39 @@ body {
     top: 0;
     width: 100%;
     display: block;
-    transition: top 0.3s;
+    
+    
   }
-  
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
   #navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Oxygen', sans-serif;
+    padding-right: 25px;
+    padding-left: 25px;
+    transition: 0.5s linear;
+    
+    
+    
   }
-  
   #navbar a:hover {
-    background-color: #ddd;
-    color: black;
+   transform: translate(4px,4px);
+   color: #f2f2f2;
+   border-radius: 4px;
+   background-color: #454545;
+
   }
+#1:hover{
+    transition: .3s linear;
+    padding-bottom: -50px;
+}
+  
 #particles-js{
     height: 100vh;
-    width: 100vh;
+    width: 100%;
 }
