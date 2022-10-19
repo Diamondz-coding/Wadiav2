@@ -1,119 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/b.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="imgs/diamond.png" type="image/icon type">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    
+    <link rel="icon" href="diamond.png" type="image/icon type">
     <title>Wadia</title>
 </head>
-<head>
-<body onclick="window.location.href='home.html'">
-   
-  <div id="gra">
-    <h1 id="h1t">
-        
-        click here to enter
-        
-      </h1>
+<a href="home.html"><body>
+    <div class="wrapper">
+        <div class="typing-demo">
+   <a href="index.html"> <p id="message">><p></a>
+    <a href="index.html"> <p id="continue"></p></a>
     </div>
-        
-        <script>
- var PixelFind = window.innerWidth
- var PixelFind2 = window.outerHeight
- console.log("Pixels = " + PixelFind + "X" + PixelFind2)
- var countcheck = 1;
- 
- 
- 
-
- 
-
-        </script>
-        <audio autoplay loop  id="playAudio">
-            <source src="audio/My Video11.mp3">
-        </audio>
-        <script>
-            var music = document.getElementById("playAudio")
-            music.volume = 0.15
-        </script>
-        
-          <script>
-            var nub = 1;
-            setTimeout(() => {
-}, "1000")
-          function textPulse(){
-
-          
-           const getel = document.getElementById("h1t")
-           
-           
-           
-
-}
-           
-              window.setInterval(textPulse, 400);
-            
-          textPulse()
-          
-          </script>
-
-
-  <script>  src="https://cdn.jsdelivr.net/combine/npm/js-cookie@3.0.1/index.min.js,npm/js-cookie@3.0.1"</script>
-  
- 
-  </head>
-    
-   
-    
-
-<script>
-  document.addEventListener("keypress", function(event) {
-	console.log("Keydown, Redirecting...")
-  const timeotu = setTimeout(200) 
- function mytimeout() {
-   timeotu(window.location.replace("home.html"))
- }
-    
-});
-</script>
 </div>
-<div id="particles-js"></div>
-<script src="particles.js"></script>
-<script src="app.js"></script>
 <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('particles.js loaded - callback');
-    });
+   document.onkeydown = function (e) {
+ window.location.replace("home.html")
+};
+
+</script>
+        <script>     
+        var quoteArray = ["FINDING COUNTRY..."];
+        var textPosition = 0; 
+        var speed = 100;
+       
+   
+       </script>
+        <a id="transition" href="https://google.com">
+            
+    <script>
+        fetch('https://api.ipregistry.co/?key=stuw58ch515zzuwy')
+       .then(function (response) {
+           return response.json();
+       })
+       .then(function (payload=txt) {
+        var changelocation = "> USER FROM" + payload.location.country.name
+        getmessage = document.getElementById("message").innerHTML = changelocation
+        i=0
+        while(i<=changelocation.length) {
+            console.log("1")
+            i+=1
+        }
+        getmessage = document.getElementById("message").innerHTML = "> CONNECTION FROM " + payload.location.country.name  + ", " + payload.location.city + "<span id='typing'>▮</span>"
+        setTimeout(() => { document.getElementById("message").innerHTML = "> CONNECTION FROM " + payload.location.country.name + ", " + payload.location.city, getcontinue = document.getElementById("continue").innerHTML = "> PRESS ANY KEY TO CONTINUE..."  + "<span id='typing'>▮</span>"; }, 4000);
+        
+           
+        
+});
+
+
+             </script>
+             
+</a></body>
+</a>
     
-      
-      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-      particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('particles.js config loaded');
-      });
-  
-  
-  
-  
-    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles-js', 'particles.json', function() {
-    console.log('particles.js config loaded');
-    });
-  
-  
-  </script>
-  
-
-
-
-    
-</head>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
 </html>
