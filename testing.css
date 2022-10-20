@@ -10,6 +10,7 @@ body {
     top: 0;
     width: 100%;
     display: block;
+    height: 100px
     
     
   }
@@ -19,8 +20,10 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
+    height: 40px;
     text-decoration: none;
+    
     font-size: 17px;
     font-family: 'Oxygen', sans-serif;
     padding-right: 25px;
@@ -44,20 +47,17 @@ body {
 }
 #footer{
   background-color: #333;
-  bottom: -500px;
+  bottom: 600px;
   height: 1000px;
   width: 100%;
-  margin-top: -980px;
+  margin-top: -1300px;
   
   
   transition: all 1.3s;
   bottom: -1000px;
 }
-#footer h1{
-  transition: all 2s;
-  opacity: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
+
 #footer p{
   transition: all 2s;
   opacity: 0;
@@ -65,12 +65,15 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#footer:hover h1{
-  margin-left: 50px;
-  animation: opace;
-  animation-duration: 3s;
-}
 
+#text2{
+  background-image: linear-gradient(#f2f2f2, #333);
+  position: relative;
+  height: 300px;
+  bottom: 1300px;
+  width: 100%;
+  margin-top: 500px;
+}
 
 html {
   scroll-behavior: smooth;
