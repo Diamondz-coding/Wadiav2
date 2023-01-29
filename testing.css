@@ -80,11 +80,11 @@ body {
   bottom: -1000px;
 }
 #images {
-  transform: scale(0.45);
+  transform: scale(0.66);
   height: 480px;
   width: 480px;
   margin-top: 200px;
-  margin-left: 0;
+  margin-left: 25px;
   border: 10px solid #333;
   border-radius: 10px;
   transition: all, 1s;
@@ -127,7 +127,7 @@ body {
   -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   transition: 0.5s;
-  transform: scale(0.8);
+  transform: scale(1);
   
 
 }
@@ -157,9 +157,9 @@ html {
   scroll-behavior: smooth;
 }
 #images2 {
-  margin-right: 0px;
+  margin-right: 25px;
   float: right;
-  transform: scale(0.45);
+  transform: scale(0.66);
   height: 480px;
   width: 480px;
   margin-top: -500px;
@@ -173,7 +173,7 @@ html {
   -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   transition: 0.5s;
-  transform: scale(0.8);
+  transform: scale(1);
   
   
 
