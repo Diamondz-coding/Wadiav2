@@ -5,20 +5,40 @@ body {
   }
   
   #navbar {
-    background-color: #333;
+    background-color: #f1f1f1;
     position: fixed;
     top: 0;
     width: 100%;
     display: block;
-    height: 100px
+    height: 100px;
+    opacity: 1;
+    transition: all,0.4s ;
+    border-bottom-style: solid;
+    border-bottom-color: #333;
+    z-index: 1;
     
     
+    
+    
+    
+  }
+  #navbar:hover{
+    background-color: #333;
+    border-bottom-color: #f1f1f1;
+  }
+  #navbar:hover a{
+    color: #f1f1f1;
+    
+    
+  }
+  #navbar:hover li{
+    background-color: #f1f1f1
   }
   @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
   #navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 30px;
     height: 40px;
@@ -33,15 +53,18 @@ body {
     
     
   }
- #navbar a:hover{
-    background-color: #f2f2f2;
-    color: #333;
- }
+  #navbar img{
+    height: 70px;
+    padding: 10px;
+    width: 90px;
+    float: right;
+  }
+
    
 
   
 #particles-js{
-    height: 150vh;
+    height: 100vh;
     width: 100%;
     
 }
@@ -56,7 +79,62 @@ body {
   transition: all 1.3s;
   bottom: -1000px;
 }
+#images {
+  transform: scale(0.45);
+  height: 480px;
+  width: 480px;
+  margin-top: 200px;
+  margin-left: 0;
+  border: 10px solid #333;
+  border-radius: 10px;
+  transition: all, 1s;
+  
+  
+  
+  
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
+#images p{
+  font-size: 20px;
+  float: right;
+  margin-top: -480px;
+  position: absolute;
+  margin-left: 500px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all, 1s;
+  font-family: 'Nunito', sans-serif;
 
+}
+#images:hover p{
+  opacity: 1;
+}
+#images h1{
+  position: absolute;
+  margin-top: -480px;
+  padding-left: 180px;
+  opacity: 0;
+  transition: all, 0.8s;
+}
+
+#images:hover h1{
+  opacity: 1;
+  
+}
+#images:hover {
+  -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+  box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+  transition: 0.5s;
+  transform: scale(0.8);
+  
+
+}
+
+#images:hover p{
+  
+}
 
 #footer p{
   transition: all 2s;
@@ -78,3 +156,44 @@ body {
 html {
   scroll-behavior: smooth;
 }
+#images2 {
+  margin-right: 0px;
+  float: right;
+  transform: scale(0.45);
+  height: 480px;
+  width: 480px;
+  margin-top: -500px;
+  margin-left: 50px;
+  border: 10px solid #333;
+  border-radius: 10px;
+  transition: all, 1s;
+}
+#images2:hover {
+  -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+  box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+  transition: 0.5s;
+  transform: scale(0.8);
+  
+  
+
+}
+#images2 p{
+  
+  font-size: 20px;
+  margin-top: -480px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all, 1s;
+  font-family: 'Nunito', sans-serif;
+  margin-left: -450px;
+  
+}
+#images2:hover p{
+  opacity: 1;
+  
+  
+}
+#images2 p{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;   };
