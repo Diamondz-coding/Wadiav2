@@ -30,7 +30,8 @@
 <div id="wrap">
 <div id="images">
   <img id="CHAIN1"src="ezgif.com-gif-maker.jpg" alt="CHAINPHOTO">
-  <h1>£44.99</h1>
+  <h1 id="P1">£44.99</h1>
+  <h2 id="T1">12mm Cuban Link Chain</h2>
   <p>This chain is plated with Sterling Silver <br> and maintains its shine in all conditions.<br><br>Available in sizes: <br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
   <style>
     #images p{
@@ -43,15 +44,55 @@
 <style>
   @media only screen and (max-width: 600px) {
   #images2{
+    position: absolute;
     transform: scale(0.5);
-    padding-left: 50px;
+    padding-top: 750px;
+    padding-left: -400px;
+    margin-left: 1%;
+    pointer-events: none;
+    
   }
+  #images2 p{
+    opacity: 1;
+    margin-left: 20px;
+    margin-top: -820px;
+    font-size: 23px;
+  }
+  #images{
+    
+    transform: scale(0.5);
+    padding-top: 100px;
+    margin-left: 1%;
+    pointer-events: none;
+  }
+  #images p{
+    opacity: 1;
+    margin-top: -850px;
+    margin-left: 20px;
+    font-size: 23px;
+  }
+  #T1{
+    float: right;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    opacity: 1;
+    margin-top: -900px;
+    margin-left: 10px;
+  }
+  #T2{
+    margin-top: -380px;
+  }
+ 
+ 
+  
 }
 </style>
 </div>
 <div id="images2">
   <img id="CHAIN2" src="twisted_rop.jpg" alt="CHAINPHOTO">
   <p>This twisted rope chain is Sterling Silver Plated <br> it is available is sizes: <br>▷ 40 cm<br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
+  <h2 id="T2">4mm Twisted Rope Chain</h2>
 </div>
 </div>
 <div id="particles-js"></div>

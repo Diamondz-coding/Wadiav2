@@ -85,8 +85,7 @@ body {
   width: 480px;
   margin-top: 200px;
   margin-left: 25px;
-  border: 10px solid #333;
-  border-radius: 10px;
+
   transition: all, 1s;
   
   
@@ -139,6 +138,8 @@ body {
   transform: scale(1);
 }
 #CHAIN1{
+  border: 10px solid #333;
+  border-radius: 10px;
   transition: all,0.5s;
 }
 
