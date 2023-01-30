@@ -103,7 +103,7 @@ body {
   margin-left: 500px;
   white-space: nowrap;
   opacity: 0;
-  transition: all, 1s;
+  transition: all, 0.5s;
   font-family: 'Nunito', sans-serif;
 
 }
@@ -115,7 +115,7 @@ body {
   margin-top: -480px;
   padding-left: 180px;
   opacity: 0;
-  transition: all, 0.8s;
+  transition: all, 0.5s;
 }
 
 #images:hover h1{
@@ -123,18 +123,27 @@ body {
   
 }
 #images:hover {
+  transform: scale(0.7);
+
+  
+
+}
+#images:hover img{
   -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-  transition: 0.5s;
+}
+#CHAIN1:hover{
+
+  transition: all,0.5s;
   transform: scale(1);
-  
-
+}
+#CHAIN1{
+  transition: all,0.5s;
 }
 
-#images:hover p{
-  
-}
+
+
 
 #footer p{
   transition: all 2s;
@@ -142,6 +151,7 @@ body {
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 
 #text2{
@@ -164,19 +174,28 @@ html {
   width: 480px;
   margin-top: -500px;
   margin-left: 50px;
+  
+  transition: all, 0.5s;
+}
+#images2:hover{
+  transform: scale(0.7);
+}
+#images2:hover img{
+  -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+  box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+}
+#CHAIN2{
   border: 10px solid #333;
   border-radius: 10px;
-  transition: all, 1s;
+  transition: all,0.5s;
 }
-#images2:hover {
+#CHAIN2:hover{
   -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
   transition: 0.5s;
   transform: scale(1);
-  
-  
-
 }
 #images2 p{
   
