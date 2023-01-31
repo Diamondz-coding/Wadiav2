@@ -9,8 +9,16 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
 </style>
-<body>
+<body onload="widthcheck()">
   <head>
+    <script>
+      function widthcheck(){
+      var width = window.screen.availWidth
+      if(width <1000){
+        location.replace('https://wadia.info/mobile.html')
+      }
+      }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 <div id="navbar">
