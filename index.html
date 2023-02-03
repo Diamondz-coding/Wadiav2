@@ -3,22 +3,39 @@
 <head>
 <link rel="stylesheet" href="testing.css">
 <link rel="icon "href="diamond.png" type="image/icon type">
+<meta name="description" content="Premium jewelry for you, WADIA Elenance, Elavated"></meta>
 <title>Wadia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
 </style>
-<body onload="widthcheck()">
+<body onload="setTimeout(CheckWidth, 2000),widthcheck()">
   <head>
     <script>
       function widthcheck(){
+      
       var width = window.screen.availWidth
       if(width <1000){
         location.replace('https://wadia.info/mobile.html')
       }
       }
     </script>
+    
+    <script>
+      function CheckWidth(){
+      var width = window.screen.availWidth
+      if(width <1800){
+        if(width >1000){
+          if(confirm("Your screen is less than 1800 pixels in width, If the website looks strange, for example, images overlaying, please click O̲K̲ to be redirected to a fixed website") == true){
+            location.replace("https://wadia.info/mobile.html")
+          }
+        }
+        
+      }
+      }
+    </script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 <div id="navbar">
@@ -37,9 +54,33 @@
 <div class="vl"></div>
 <div class="hl"></div>
 <div id="wrap">
+  
 <div id="images">
+  
   <img id="CHAIN1"src="ezgif.com-gif-maker.jpg" alt="CHAINPHOTO">
   <h1 id="P1">£29.99</h1>
+  <button onclick="clicked()" class="mi1">More Information</button>
+  
+  <style>
+    .mi1{
+      transition: all, 0.5s;
+      cursor: pointer;
+      padding-top: 500px;
+      position: absolute;
+      opacity: 0%;
+      background-color: rgb(63, 63, 63);
+    border-radius: 50px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 170px;
+    margin-top: 400px;
+
+    }
+  </style>
   <h2 id="T1">12mm Cuban Link Chain</h2>
   <p>This chain is plated with Sterling Silver <br> and maintains its shine in all conditions.<br><br>Available in sizes: <br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
   <style>

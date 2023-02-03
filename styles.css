@@ -157,6 +157,7 @@ body{
     font-size: 20px;
     margin-left: 70px;
 }
+
 #copyright{
     margin-top: -2000px;
 }
@@ -169,4 +170,7 @@ body{
 }
 #sep2 h1{
     opacity: 0;
+}
+#info1 img{
+    width: 10px;
 }
