@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="testing.css">
-<link rel="icon "href="diamond.png" type="image/icon type">
+<link rel="stylesheet" href="/css/testing.css">
+<link rel="icon "href="/imgs/diamond.png" type="image/icon type">
 <title>Wadia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -24,8 +24,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 <div id="navbar">
-<img  class="logo" src="diamond.png" alt="">
-<img class="logo2"src="WadialogoV2white-AI.png" alt="" width="70px">
+<img  class="logo" src="/imgs/diamond.png" alt="">
+<img class="logo2"src="/imgs/WadialogoV2white-AI.png" alt="" width="70px">
   <a href="index.html">Home</a>
 
   <a href="contact.html">Contact</a>
@@ -39,47 +39,61 @@
   
 </script>
 
-  
+  <h1 id="slogan">ELAGENCE, ELAVATED</h1>
   <h4 id="contact">Contact us<h4>
   <h5 id="email">contact@wadia.info</h5>
   
   <style>
-  #contact{
-    margin-top: -900px;
-    margin-left: 800px;
-    opacity: 1;
-    font-size: 70px;
-    position:relative;
-    font-family: sans-serif;
-  }
-  #email{
-    margin-left: 800px;
-    font-size: 40px;
-    font-family: sans-serif;
-    opacity: 1;
-  }
-
-  body{
-    background-image: url(bg.jpg);
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+    #contact{
+      margin-top: 500px;
+      margin-left: 780px;
+      opacity: 1;
+      font-size: 70px;
+      position:relative;
+      font-family: 'Inter', sans-serif;
+    }
     
-  }
-</style>
+    
+    
 
+
+    #email{
+      margin-left: 770px;
+      font-size: 40px;
+      font-family: sans-serif;
+      opacity: 1;
+    }
+  #slogan{
+    margin-top: 150px;
+    font-size: 30px;
+    margin-left: 712px;
+    width: 485px;
+  }
+  #slogan:hover{
+    transform: scale(1.2);
+  }
+  
+  </style>
+  
     
   </style>
   
 
 </div>
 
-<img id="l"src="Midlogo.png" alt="LOGO">
+<img id="l"src="/imgs/Midlogo.png" alt="LOGO">
 <style>
 #l{
   position: absolute;
   width: 200px;
   margin-top: -500px;
-  margin-left: 870px;
-
+  margin-left: 860px;
+  transition: all,0.5s;
   
+}
+#l:hover{
+  transform: scale(1.2);
 }
 </style>
  

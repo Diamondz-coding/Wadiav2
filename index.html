@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="testing.css">
+<link rel="stylesheet" href="css/testing.css">
 <link rel="icon "href="diamond.png" type="image/icon type">
 <meta name="description" content="Premium jewelry for you, WADIA Elenance, Elavated"></meta>
 <title>Wadia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<script src="https://kit.fontawesome.com/2aa3c3cef5.js" crossorigin="anonymous"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
 </style>
@@ -35,14 +36,51 @@
       }
       }
     </script>
-    
+    <script>
+      function dark(){
+        const main = document.body;
+        const styles = window.getComputedStyle(main);
+        const image = styles.backgroundImage;
+        const url = image.slice(5, -2);
+        console.log(url)
+        if(url=="https://wadia.info/imgs/bgdark.png" || url=="http://127.0.0.1:5500/imgs/bgdark.png")  {
+          var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
+          moon.className = "fa-light fa-moon"
+          document.body.style.backgroundImage="url('/imgs/bg.jpg')"
+          document.getElementById('slogan').style.borderColor="black"
+          document.getElementById('slogan').style.color="black"
+          document.getElementById("logomid").src = "/imgs/Midlogo.png";
+          document.getElementById("CHAIN1").style.borderColor = "#333"
+          document.getElementById("CHAIN2").style.borderColor = "#333"
+          document.getElementById("T1").style.color = "black"
+          document.getElementById("T2").style.color = "black"
+          document.getElementById("D1").style.color = "black"
+          document.getElementById("D2").style.color = "black"
+        } else if(url=="https://wadia.info/imgs/bg.jpg" || url=="http://127.0.0.1:5500/imgs/bg.jpg"){
+          document.body.style.backgroundImage="url('/imgs/bgdark.png')"
+          document.getElementById('slogan').style.borderColor="white"
+          document.getElementById('slogan').style.color="white"
+          document.getElementById("logomid").src = "/imgs/image.png";
+          document.getElementById("CHAIN1").style.borderColor = "#8c8a89"
+          document.getElementById("CHAIN2").style.borderColor = "#8c8a89"
+          document.getElementById("T1").style.color = "white"
+          document.getElementById("T2").style.color = "white"
+          document.getElementById("D1").style.color = "white"
+          document.getElementById("D2").style.color = "white"
+          
+        }else{
+          console.log("error")
+        }
+        
+      }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 <div id="navbar">
-<img class="logo" src="diamond.png" alt="">
-  <img class="logo2"src="WadialogoV2white-AI.png" alt="" width="70px">
+<img class="logo" src="/imgs/diamond.png" alt="">
+  <img class="logo2"src="/imgs/WadialogoV2white-AI.png" alt="" width="70px">
   <a href="index.html">Home</a>
-
+  <button onclick="dark()"class="dark"><i class="fa-solid fa-moon fa-5x"></i></button>
   <a href="contact.html">Contact</a>
 </div>
 <h1 id="slogan">ELAGENCE, ELAVATED</h1>
@@ -62,7 +100,7 @@
       location.replace('chain1moreinfo.html')
     }
   </script>
-  <img id="CHAIN1"src="ezgif.com-gif-maker.jpg" alt="CHAINPHOTO">
+  <img id="CHAIN1"src="/imgs/chain1.jpg" alt="CHAINPHOTO">
   <h1 id="P1">£29.99</h1>
   <button onclick="clicked()" class="mi1">More Information</button>
   
@@ -86,9 +124,28 @@
 
     }
   </style>
+  <style>
+
+    .dark{
+    
+      background-color: none;
+      border:none;
+      background-color:transparent;
+      outline:none;
+      position: absolute;
+      margin-top: 30px;
+      
+      background-image: url(moon.png) no-repeat;
+      margin-left: 140px;
+      cursor: pointer;
+    }
+    .fa-5x{
+      font-size: 2em;
+    }
   
+  </style>
   <h2 id="T1">5mm Cuban Link Chain</h2>
-  <p>This chain is plated with Sterling Silver <br> and maintains its shine in all conditions.<br><br>Available in sizes: <br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
+  <p id="D1">This chain is plated with Sterling Silver <br> and maintains its shine in all conditions.<br><br>Available in sizes: <br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
   <style>
     #images p{
       font-family: 'Nunito', sans-serif;
@@ -161,23 +218,23 @@
   opacity: 1;
 }
 </style>
+
 </div>
 <div id="middle">
-<img id="logomid" src="Midlogo.png" alt="" width="500px">
+<img id="logomid" src="/imgs/Midlogo.png" alt="" width="500px">
 </div>
 <div id="images2">
-  <img id="CHAIN2" src="twisted_rop.jpg" alt="CHAINPHOTO">
-  <p>This twisted rope chain is Sterling Silver Plated <br> it is available is sizes: <br>▷ 40 cm<br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
+  <img id="CHAIN2" src="/imgs/chain2.jpg" alt="CHAINPHOTO">
+  <p id="D2">This twisted rope chain is Sterling Silver Plated <br> it is available is sizes: <br>▷ 40 cm<br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
   <h1 id="P2">£24.99</h1>
   <h2 id="T2">4mm Twisted Rope Chain</h2>
 </div>
 </div>
 <div id="particles-js"></div>
 <div id="particles-js"></div>
-<div id="text2"></div>
-<div class="box">
-<div id="footer">
-</div>
-</div>
+
+<h1 id="copy">Copyright @Wadia.info 2023</h1>
+
+
 </body>
 </html>
