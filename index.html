@@ -49,7 +49,7 @@
           document.body.style.backgroundImage="url('/imgs/bg.jpg')"
           document.getElementById('slogan').style.borderColor="black"
           document.getElementById('slogan').style.color="black"
-          document.getElementById("logomid").src = "/imgs/";
+          document.getElementById("logomid").src = "/imgs/Midlogo.png";
           document.getElementById("CHAIN1").style.borderColor = "#333"
           document.getElementById("CHAIN2").style.borderColor = "#333"
           document.getElementById("T1").style.color = "black"
@@ -76,9 +76,14 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
+    <script>
+      function logoredirect(){
+        location.replace("index.html")
+      }
+    </script>
 <div id="navbar">
-<img class="logo" src="/imgs/diamond.png" alt="">
-  <img class="logo2"src="/imgs/WadialogoV2white-AI.png" alt="" width="70px">
+<img class="logo" src="/imgs/diamond.png" alt="" onclick="logoredirect()">
+  <img class="logo2"src="/imgs/WadialogoV2white-AI.png" alt="" width="70px" onclick="logoredirect()">
   <a href="index.html">Home</a>
   <button onclick="dark()"class="dark"><i class="fa-solid fa-moon fa-5x"></i></button>
   <a href="contact.html">Contact</a>

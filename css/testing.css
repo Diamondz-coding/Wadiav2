@@ -72,6 +72,7 @@ body {
     -moz-transition: opacity 0.4s ease-in-out;
     -o-transition: opacity 0.4s ease-in-out;
     transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
   }
   .logo2{
       margin-left: 1810px;
@@ -86,6 +87,7 @@ body {
       -moz-transition: opacity 0.4s ease-in-out;
       -o-transition: opacity 0.4s ease-in-out;
       transition: opacity 0.4s ease-in-out;
+      cursor: pointer;
     
   }
   #navbar:hover .logo{

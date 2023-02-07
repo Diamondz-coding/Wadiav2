@@ -23,9 +23,14 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
+    <script>
+      function logoredirect(){
+        location.replace("index.html")
+      }
+    </script>
 <div id="navbar">
-<img  class="logo" src="/imgs/diamond.png" alt="">
-<img class="logo2"src="/imgs/WadialogoV2white-AI.png" alt="" width="70px">
+<img  class="logo" src="/imgs/diamond.png" alt="" onclick="logoredirect()">
+<img class="logo2"src="/imgs/WadialogoV2white-AI.png" alt="" width="70px" onclick="logoredirect()">
   <a href="index.html">Home</a>
 
   <a href="contact.html">Contact</a>
