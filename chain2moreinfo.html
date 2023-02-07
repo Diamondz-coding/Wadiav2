@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      background-image: url(/imgs/bgdark.png)
+    }
+  
+    
+  </style>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/css/testing.css">
+<link rel="icon "href="/imgs/diamond.png" type="image/icon type">
+<title>Wadia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script src="https://kit.fontawesome.com/2aa3c3cef5.js" crossorigin="anonymous"></script>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
+</style>
+<body onload="widthcheck()">
+  <head>
+    <script>
+      function widthcheck(){
+      var width = window.screen.availWidth
+      if(width <1000){
+        location.replace('https://wadia.info/contactmobile.html')
+      }
+      }
+    </script>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+<div id="navbar">
+<img  class="logo" src="/imgs/diamond.png" alt="">
+<img class="logo2"src="/imgs/WadialogoV2white-AI.png" alt="" width="70px">
+  <a href="index.html">Home</a>
+  
+  <button onclick="dark()"class="dark"><i class="fa-solid fa-moon fa-5x"></i></button>
+  <a href="contact.html">Contact</a>
+</div>
+<style>
+  #navbar a{
+    padding: 35px;
+  }
+</style>
+</div>
+<script>
+  function dark(){
+    const main = document.body;
+    const styles = window.getComputedStyle(main);
+    const image = styles.backgroundImage;
+    const url = image.slice(5, -2);
+    console.log(url)
+    if(url=="https://wadia.info/imgs/bgdark.png" || url=="http://127.0.0.1:5500/imgs/bgdark.png"){
+      var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
+      moon.className = "fa-light fa-moon"
+      document.body.style.backgroundImage="url('/imgs/bg.jpg')"
+    } else if(url=="https://wadia.info/imgs/bg.jpg" || url=="http://127.0.0.1:5500/imgs/bg.jpg"){
+      document.body.style.backgroundImage="url('/imgs/bgdark.png')"
+    }else{
+      console.log("error")
+    }
+    
+  }
+</script>
+
+
+
+<style>
+
+  .dark{
+  
+    background-color: none;
+    border:none;
+    background-color:transparent;
+    outline:none;
+    position: absolute;
+    margin-top: 30px;
+    
+    background-image: url(moon.png) no-repeat;
+    margin-left: 140px;
+    cursor: pointer;
+  }
+  .fa-5x{
+    font-size: 2em;
+  }
+
+</style>
+<img  id="i1" src="/imgs/chain1.jpg" alt="" width="280px">
+<p id="desc">This silver plated 4mm chain is a stunning accessory that will elevate any look .<br> Its delicate 4mm width is perfect for layering or wearing alone, and the silver plating adds a touch of sophistication and shine. <br>Whether dressed up or dressed down, this chain is a versatile piece that will complement any outfit. With its sturdy construction and timeless design, this silver plated 4mm chain is a must-have for anyone looking to add a touch of elegance to their jewelry collection.</p>
+<style>
+    #i1{
+        position: absolute;
+        margin-left: 250px;
+        margin-top: -1000px;
+        border: 10px solid #2c2c2c;
+        border-radius: 22px;
+        transition: all, 0.5s;
+        padding: -20px;
+    
+    }
+    #i1:hover{
+        transform: scale(1.05);
+    }
+    #desc{
+      position: absolute;
+      left: 30%;
+      margin-top: -970px;
+      font: 1em sans-serif;
+      word-wrap: inherit;
+    }
+</style>
+ 
+
+
+<div id="particles-js"></div>
+
+<div id="particles-js"></div>
+
+
+
+<div class="box">
+
+  
+</div>
+
+
+
+
+
+</body>
+</html>
