@@ -13,9 +13,10 @@
 <body>
     <nav>
         <div id="nav1">
-        <a id="Home" href="#">Home</a>
-        <a id="contact" href="/imgs/contact.html">Contact</a>
-        <button onclick="dark()"class="dark"><i class="fa-solid fa-moon fa-5x"></i></button>
+        <a href="#">Home</a>
+        <a href="contact.html">Contact</a>
+        <svg class="dark" onclick="dark()" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16"><path fill="currentColor" d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></svg>
+
         <img id="logo" src="/imgs/diamond.png" alt="LOGO" width="50px">
     </nav>
 </div>
@@ -73,22 +74,44 @@
       <style>
       
         .dark{
-        
+           height: 3em;
+           width: 3em;
           background-color: none;
           border:none;
           background-color:transparent;
           outline:none;
-          position: absolute;
+          
           margin-top: 20px;
           
-          background-image: url(moon.png) no-repeat;
-          margin-left: 120px;
+          
+          
           cursor: pointer;
         }
         .fa-5x{
           font-size: 4em;
         }
-      
+        @media screen and (max-width: 500px) { 
+            .dark{
+                width: 2em;
+                height: 2em;
+                margin-left: 0px;
+                margin-top: 28px;
+            }
+            #logo{
+                width: 40px;
+                margin-top: 10px;
+            }
+            #nav1{
+                padding: 5px;
+            }
+            #nav1 a{
+                font-size: 15px;
+                padding: 20px;
+                margin-top: 20px;
+                
+            }
+        }
+        
       </style>
     <div id="CHAIN1">
         
