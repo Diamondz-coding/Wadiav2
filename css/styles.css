@@ -149,7 +149,7 @@ nav img{ /* Logo*/
     
 }
 body{
-    background-image: url(bg.jpg);
+    background-image: url(/imgs/bg.jpg);
 }
 #CHAIN2 h1{
     position: relative;
