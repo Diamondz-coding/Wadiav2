@@ -7,26 +7,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WADIA</title>
+    <script src="https://kit.fontawesome.com/2aa3c3cef5.js" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
-        <a href="/imgs/contact.html">Contact</a>
-        <img src="/imgs/diamond.png" alt="LOGO" width="50px">
+        <div id="nav1">
+        <a id="Home" href="#">Home</a>
+        <a id="contact" href="/imgs/contact.html">Contact</a>
+        <button onclick="dark()"class="dark"><i class="fa-solid fa-moon fa-5x"></i></button>
+        <img id="logo" src="/imgs/diamond.png" alt="LOGO" width="50px">
     </nav>
+</div>
+    <script>
+        function dark(){
+          const main = document.body;
+          const styles = window.getComputedStyle(main);
+          const image = styles.backgroundImage;
+          const url = image.slice(5, -2);
+          console.log(url)
+          if(url=="https://wadia.info/imgs/bgdark.png" || url=="http://127.0.0.1:5500/imgs/bgdark.png"){
+            var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
+            moon.className = "fa-light fa-moon"
+            document.getElementById('d1').style.color = 'black'
+            document.getElementById('d2').style.color = 'black'
+            document.getElementById('p1').style.borderColor = '#333'
+            document.getElementById('p2').style.borderColor = '#333'
+            document.getElementById('price1').style.color = 'black'
+            document.getElementById('price2').style.color = 'black'
+            document.getElementById('sep2').style.backgroundColor = 'black'
+            document.getElementById('sep').style.backgroundColor = 'black'
+            document.getElementById('nav1').style.backgroundColor = "white"
+            document.getElementById("logo").src = "/imgs/diamond.png";
+            const navtext = document.getElementById('nav1')
+            const nodes = navtext.getElementsByTagName('a');
+            for (let i = 0; i < nodes.length; i++) {
+                nodes[i].style.color = "black";
+}
+            
+            document.body.style.backgroundImage="url('/imgs/bg.jpg')"
+          } else if(url=="https://wadia.info/imgs/bg.jpg" || url=="http://127.0.0.1:5500/imgs/bg.jpg"){
+            document.getElementById('d1').style.color = 'white'
+            document.body.style.backgroundImage="url('/imgs/bgdark.png')"
+            document.getElementById('d2').style.color = 'white'
+            document.getElementById('p1').style.borderColor = '#8c8a89'
+            document.getElementById('p2').style.borderColor = '#8c8a89'
+            document.getElementById('price1').style.color = 'white'
+            document.getElementById('price2').style.color = 'white'
+            document.getElementById('sep2').style.backgroundColor = 'white'
+            document.getElementById('sep').style.backgroundColor = 'white'
+            document.getElementById('nav1').style.backgroundColor = "#333333"
+            document.getElementById("logo").src = "/imgs/WadialogoV2white-AI.png";
+            const navtext = document.getElementById('nav1')
+            const nodes = navtext.getElementsByTagName('a');
+            for (let i = 0; i < nodes.length; i++) {
+                nodes[i].style.color = "white";
+}
+            
+          }else{
+            console.log("error")
+          }
+          
+        }
+      </script>
+      <style>
+      
+        .dark{
+        
+          background-color: none;
+          border:none;
+          background-color:transparent;
+          outline:none;
+          position: absolute;
+          margin-top: 20px;
+          
+          background-image: url(moon.png) no-repeat;
+          margin-left: 120px;
+          cursor: pointer;
+        }
+        .fa-5x{
+          font-size: 4em;
+        }
+      
+      </style>
     <div id="CHAIN1">
         
         <img style="border: 5px solid rgba(74,74,74,0.45); border-radius: 24px;" id="p1"src="/imgs/chain1.jpg" alt="chain1" width="200px">
-        <p>This chain is plated with Sterling Silver <br> and maintains its shine in all conditions.<br><br>Available in sizes: <br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
-        <h1>£29.99</h1>
+        <p id="d1">This chain is plated with Sterling Silver <br> and maintains its shine in all conditions.<br><br>Available in sizes: <br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
+        <h1 id="price1">£29.99</h1>
     </div>
     <div id="sep"> <!-- Sep short for seperator, the line under the first chain--> 
         <h1>1</h1> <!-- header just so that the div will be able to have a color and editable in css, you wont see the "1" as the opacity is 0-->
     </div>
     <div id="CHAIN2">
         <img  id="p2" style="border: 5px solid rgba(74,74,74,0.45); border-radius: 24px;" src="/imgs/chain2.jpg" alt="chain2" width="200px">
-        <p>This twisted rope chain is Sterling Silver Plated <br> it is available in sizes: <br>▷ 40 cm<br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
-        <h1>£24.99</h1>
+        <p id="d2">This twisted rope chain is Sterling Silver Plated <br> it is available in sizes: <br>▷ 40 cm<br>▷ 45cm <br>▷ 50cm<br>▷ 55cm<br>▷ 60cm<br>▷ 65cm<br>▷ 70cm<br>▷ 75cm</p>
+        <h1 id="price2">£24.99</h1>
     </div>
     <div id="sep2">
         <h1>1</h1>

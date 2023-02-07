@@ -18,7 +18,7 @@
 <img  class="logo" src="diamond.png" alt="">
 
   <a href="index.html">Home</a>
-
+  <button onclick="dark()"class="dark"><i class="fa-solid fa-moon fa-5x"></i></button>
   <a href="contact.html">Contact</a>
 </div>
 <style>
@@ -27,8 +27,44 @@
   }
 </style>
 <script>
-  
+  function dark(){
+    const main = document.body;
+    const styles = window.getComputedStyle(main);
+    const image = styles.backgroundImage;
+    const url = image.slice(5, -2);
+    console.log(url)
+    if(url=="https://wadia.info/imgs/bgdark.png" || url=="http://127.0.0.1:5500/imgs/bgdark.png"){
+      var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
+      moon.className = "fa-light fa-moon"
+      document.body.style.backgroundImage="url('/imgs/bg.jpg')"
+    } else if(url=="https://wadia.info/imgs/bg.jpg" || url=="http://127.0.0.1:5500/imgs/bg.jpg"){
+      document.body.style.backgroundImage="url('/imgs/bgdark.png')"
+    }else{
+      console.log("error")
+    }
+    
+  }
 </script>
+<style>
+
+  .dark{
+  
+    background-color: none;
+    border:none;
+    background-color:transparent;
+    outline:none;
+    position: absolute;
+    margin-top: 30px;
+    
+    background-image: url(moon.png) no-repeat;
+    margin-left: 140px;
+    cursor: pointer;
+  }
+  .fa-5x{
+    font-size: 2em;
+  }
+
+</style>
 
   
   <h4 id="contact">Contact us<h4>
