@@ -57,9 +57,13 @@
     if(url=="https://wadia.info/imgs/bgdark.png" || url=="http://127.0.0.1:5500/imgs/bgdark.png"){
       var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
       moon.className = "fa-light fa-moon"
+      document.getElementById('desc').style.color = "black"
+      document.getElementById('stripe').style.color = "black"
       document.body.style.backgroundImage="url('/imgs/bg.jpg')"
     } else if(url=="https://wadia.info/imgs/bg.jpg" || url=="http://127.0.0.1:5500/imgs/bg.jpg"){
       document.body.style.backgroundImage="url('/imgs/bgdark.png')"
+      document.getElementById('desc').style.color = "white"
+      document.getElementById('stripe').style.color = "white"
     }else{
       console.log("error")
     }
@@ -89,13 +93,21 @@
   }
 
 </style>
+<script>
+  function purchase(){
+    location.replace('https://buy.stripe.com/9AQbLb7kc4OxahqaEE')
+  }
+</script>
 <img  id="i1" src="/imgs/chain1.jpg" alt="" width="280px">
-<p id="desc">This silver plated 4mm chain is a stunning accessory that will elevate any look .<br> Its delicate 4mm width is perfect for layering or wearing alone, and the silver plating adds a touch of sophistication and shine. <br>Whether dressed up or dressed down, this chain is a versatile piece that will complement any outfit. With its sturdy construction and timeless design, this silver plated 4mm chain is a must-have for anyone looking to add a touch of elegance to their jewelry collection.</p>
+<p id="desc">This silver plated 4mm chain is a stunning accessory that will elevate any look .<br> Its delicate 4mm width is perfect for layering or wearing alone, and the silver plating-<br> adds a touch of sophistication and shine. Whether dressed up or dressed down, this chain is a- <br>versatile piece that will complement any outfit. With its sturdy construction and timeless design, <br>this silver plated 4mm chain is a must-have for anyone looking to add a touch of elegance to their jewelry collection.</p>
+<button onclick="purchase()"id="purchase">Pay By Card</button>
+<p id="stripe">All payments are handled through stripe.</p>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
     #i1{
         position: absolute;
         margin-left: 250px;
-        margin-top: -1000px;
+        margin-top: 250px;
         border: 10px solid #2c2c2c;
         border-radius: 22px;
         transition: all, 0.5s;
@@ -108,9 +120,38 @@
     #desc{
       position: absolute;
       left: 30%;
-      margin-top: -970px;
+      margin-top: 250px;
       font: 1em sans-serif;
       word-wrap: inherit;
+    }
+    #purchase{
+      position: absolute;
+      margin-top: 440px;
+      margin-left: 630px;
+      border: none;
+      border-radius: 9px;
+      background-color: #436ba3;
+      width: 150px;
+      height: 40px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      
+transition: all, 0.5s;
+
+      
+    }
+    #purchase:hover{
+      translate:1px -1px;
+      border: none;
+      
+    }
+    #stripe{
+      font-family: Arial, Helvetica, sans-serif;
+      position: absolute;
+      margin-top: 479px;
+      margin-left: 620px;
+      font-size: 10px;
     }
 </style>
  
