@@ -84,15 +84,20 @@
         }
       </script>
       <script>
-          function purchase2(){
-    location.replace('https://buy.stripe.com/aEU4iJdIA3KtexG8wx')
-  }
-</script>
-<script>
-    function purchase(){
-      location.replace('mobilewidthselect.html')
-    }
-  </script>
+        function purchase(){
+          location.replace('https://buy.stripe.com/7sI8yZ5c41Clahq8wz')
+        }
+      </script>
+      <script>
+        function purchase1(){
+          location.replace('https://buy.stripe.com/9AQbLb7kc4OxahqaEE')
+        }
+      </script>
+      <script>
+        function purchase2(){
+          location.replace('https://buy.stripe.com/14k3eF8og2Gp1KUbIK')
+        }
+      </script>
 
       
       <style>
@@ -141,19 +146,17 @@
 
     <div id="CHAIN1">
         
-        <img style="border: 5px solid rgba(74,74,74,0.45); border-radius: 24px;" id="p1"src="/imgs/chain1.jpg" alt="chain1" width="200px">
-        <button onclick="purchase()"id="purchase">PURCHASE</button>
-        <p id="d1">This chain is plated with Sterling Silver <br> and maintains its shine in all conditions.<br><br>Available in sizes: <br>▷ 45cm (3mm ONLY)<br>▷ 50cm (3mm, 5mm, 7mm ONLY)<br>▷ 55cm (5mm ONLY) <br><br><br><br></p>
-        <h1 id="price1">£29.99</h1>
+        
+        <button onclick="purchase()"id="purchase">PURCHASE 3MM CUBAN</button>
+        
     </div>
     <div id="sep"> <!-- Sep short for seperator, the line under the first chain--> 
         <h1>1</h1> <!-- header just so that the div will be able to have a color and editable in css, you wont see the "1" as the opacity is 0-->
     </div>
     <div id="CHAIN2">
-        <img  id="p2" style="border: 5px solid rgba(74,74,74,0.45); border-radius: 24px;" src="/imgs/chain2.jpg" alt="chain2" width="200px">
-        <button onclick="purchase2()"id="purchase1">PURCHASE</button>
-        <p id="d2">This twisted rope chain is Sterling Silver Plated <br> it is available in sizes: <br>▷ 40 cm (2mm ONLY)<br>▷ <s>50cm</s>OUT OF STOCK<br>▷ <S>55cm</s>OUT OF STOCK<br><br><br><br><br></p>
-        <h1 id="price2">£24.99</h1>
+        
+        <button onclick="purchase1()"id="purchase1">PURCHASE 5MM CUBAN</button>
+        <button onclick="purchase2()"id="purchase2">PURCHASE 7MM CUBAN</button>
     </div>
     <div id="sep2">
         <h1>1</h1>
@@ -167,9 +170,9 @@
       
       border-radius: 9px;
       background-color: #ffffff;
-      width: 150px;
-      height: 40px;
-      margin-left: -175px;
+      width: 200px;
+      height: 50px;
+      margin-left: -50px;
       color: black;
       font-family: Arial, Helvetica, sans-serif;
       cursor: pointer;
@@ -181,13 +184,13 @@ transition: all, 0.5s;
     #purchase1{
         
       position: absolute;
-      margin-top: 215px;
+      margin-top: 250px;
       
       border-radius: 9px;
       background-color: #ffffff;
-      width: 150px;
-      height: 40px;
-      margin-left: -175px;
+      width: 200px;
+      height: 50px;
+      margin-left:-50px;
       color: black;
       font-family: Arial, Helvetica, sans-serif;
       cursor: pointer;
@@ -196,7 +199,72 @@ transition: all, 0.5s;
 
       
     }
-
+    #purchase2{
+        
+        position: absolute;
+        margin-top: 330px;
+        
+        border-radius: 9px;
+        background-color: #ffffff;
+        width: 200px;
+        height: 50px;
+        margin-left:-50px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        
+  transition: all, 0.5s;
+  
+        
+      }
+      @media screen and (max-width: 400px) { 
+      #purchase2{
+        margin-left: 15px;
+      }
+      #purchase1{
+        margin-left: 15px;
+      }
+      #purchase{
+        margin-left: 15px;
+      }
+      
+    }
+    @media screen and (min-width: 1000px) { 
+      #purchase2{
+        margin-left: 50px;
+      }
+      #purchase1{
+        margin-left: 50px;
+      }
+      #purchase{
+        margin-left: 50px;
+      }
+      
+    }
+    @media screen and (min-width: 1100px) { 
+      #purchase2{
+        margin-left: 200px;
+      }
+      #purchase1{
+        margin-left: 200px;
+      }
+      #purchase{
+        margin-left: 200px;
+      }
+      
+    }
+    @media screen and (min-width: 1400px) { 
+      #purchase2{
+        margin-left: 300px;
+      }
+      #purchase1{
+        margin-left: 300px;
+      }
+      #purchase{
+        margin-left: 300px;
+      }
+      
+    }
         </style>
     </div>
     <h1 id="copyright">Copyright © 2023 wadia.info</h1>

@@ -22,6 +22,7 @@
 </style>
 <body onload="widthcheck()">
   <head>
+    <h1 id="c1title">cuban link chain</h1>
     <script>
       function widthcheck(){
       var width = window.screen.availWidth
@@ -44,6 +45,16 @@
 <style>
   #navbar a{
     padding: 35px;
+  }
+  @font-face {
+    font-family: Wadia;
+    src: url(/IKARRG__.TTF);
+  }
+  #c1title {
+    font-family:wadia ;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 250px;
   }
 </style>
 </div>
@@ -95,19 +106,38 @@
 </style>
 <script>
   function purchase(){
+    location.replace('https://buy.stripe.com/7sI8yZ5c41Clahq8wz')
+  }
+</script>
+<script>
+  function purchase1(){
     location.replace('https://buy.stripe.com/9AQbLb7kc4OxahqaEE')
   }
 </script>
+<script>
+  function purchase2(){
+    location.replace('https://buy.stripe.com/14k3eF8og2Gp1KUbIK')
+  }
+</script>
 <img  id="i1" src="/imgs/chain1.jpg" alt="" width="280px">
-<p id="desc">This silver plated 4mm chain is a stunning accessory that will elevate any look .<br> Its delicate 4mm width is perfect for layering or wearing alone, and the silver plating-<br> adds a touch of sophistication and shine. Whether dressed up or dressed down, this chain is a- <br>versatile piece that will complement any outfit. With its sturdy construction and timeless design, <br>this silver plated 4mm chain is a must-have for anyone looking to add a touch of elegance to their jewelry collection.</p>
-<button onclick="purchase()"id="purchase">Pay By Card</button>
+<p id="desc">This silver plated chain is a stunning accessory that will elevate any look .<br> Its delicate  width is perfect for layering or wearing alone, and the silver plating <br> adds a touch of sophistication and shine. Whether dressed up or dressed down, this <br> chain is a versatile piece that will complement any outfit. With its sturdy construction <br>and timeless design, this silver plated  chain is a must-have for anyone looking <br>to add a touch of elegance to their jewelry collection.<br><br>Available in sizes:<br> ▷ 45cm (3mm ONLY)<br>▷ 50cm (3mm, 7mm, 5mm ONLY)<br>▷ 55cm (5mm ONLY)</p>
+<button onclick="purchase()"id="purchase">Buy 3mm</button>
+<button onclick="purchase1()"id="purchase1">Buy 5mm</button>
+<button onclick="purchase2()"id="purchase2">Buy 7mm</button>
+
+
+
 <p id="stripe">All payments are handled through stripe.</p>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+  #ddlViewBy{
+    margin-top: 500px;
+    margin-left: 800px;
+  }
     #i1{
         position: absolute;
         margin-left: 250px;
-        margin-top: 250px;
+        margin-top: 50px;
         border: 10px solid #2c2c2c;
         border-radius: 22px;
         transition: all, 0.5s;
@@ -120,7 +150,7 @@
     #desc{
       position: absolute;
       left: 30%;
-      margin-top: 250px;
+      margin-top: 75px;
       font: 1em sans-serif;
       word-wrap: inherit;
     }
@@ -142,6 +172,46 @@ transition: all, 0.5s;
       
     }
     #purchase:hover{
+      translate:1px -1px;
+      border: none;
+      
+    }
+    #purchase1{
+      position: absolute;
+      margin-top: 440px;
+      margin-left: 800px;
+      border: none;
+      border-radius: 9px;
+      background-color: #436ba3;
+      width: 150px;
+      height: 40px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      
+transition: all, 0.5s;
+    }
+    #purchase2{
+      position: absolute;
+      margin-top: 440px;
+      margin-left: 970px;
+      border: none;
+      border-radius: 9px;
+      background-color: #436ba3;
+      width: 150px;
+      height: 40px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      
+transition: all, 0.5s;
+    }
+    #purchase1:hover{
+      translate:1px -1px;
+      border: none;
+      
+    }
+    #purchase2:hover{
       translate:1px -1px;
       border: none;
       
