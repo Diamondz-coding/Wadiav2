@@ -18,11 +18,14 @@
 
 
 <style>
+  
   @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
 </style>
 <body onload="widthcheck()">
   <head>
-    <h1 id="c1title">cuban link chain</h1>
+
+    <h1 id="c1title">CUBAN LINK CHAIN</h1>
+
     <script>
       function widthcheck(){
       var width = window.screen.availWidth
@@ -51,10 +54,12 @@
     src: url(/IKARRG__.TTF);
   }
   #c1title {
-    font-family:wadia ;
-    font-size: 40px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 50px;
     margin-top: 100px;
     margin-left: 250px;
+    transition: all, 0.5s;
+    
   }
 </style>
 </div>
@@ -68,12 +73,14 @@
     if(url=="https://wadia.info/imgs/bgdark.png" || url=="http://127.0.0.1:5500/imgs/bgdark.png"){
       var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
       moon.className = "fa-light fa-moon"
+      document.getElementById('c1title').style.color = "black"
       document.getElementById('desc').style.color = "black"
       document.getElementById('stripe').style.color = "black"
       document.body.style.backgroundImage="url('/imgs/bg.jpg')"
     } else if(url=="https://wadia.info/imgs/bg.jpg" || url=="http://127.0.0.1:5500/imgs/bg.jpg"){
       document.body.style.backgroundImage="url('/imgs/bgdark.png')"
       document.getElementById('desc').style.color = "white"
+      document.getElementById('c1title').style.color = "white"
       document.getElementById('stripe').style.color = "white"
     }else{
       console.log("error")
@@ -129,6 +136,21 @@
 
 <p id="stripe">All payments are handled through stripe.</p>
 <style>
+  @media screen and (max-width: 1750px) {
+    #desc{
+      margin-left: 100px
+    }
+   }
+   @media screen and (max-width: 1500px) { 
+    #desc{
+      margin-left: 200px
+    }
+   }
+   @media screen and (max-width: 1150px) { 
+    #desc{
+      margin-left: 300px
+    }
+   }
   @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
   #ddlViewBy{
     margin-top: 500px;
@@ -156,7 +178,7 @@
     }
     #purchase{
       position: absolute;
-      margin-top: 440px;
+      margin-top: 325px;
       margin-left: 630px;
       border: none;
       border-radius: 9px;
@@ -178,7 +200,7 @@ transition: all, 0.5s;
     }
     #purchase1{
       position: absolute;
-      margin-top: 440px;
+      margin-top: 325px;
       margin-left: 800px;
       border: none;
       border-radius: 9px;
@@ -193,7 +215,7 @@ transition: all, 0.5s;
     }
     #purchase2{
       position: absolute;
-      margin-top: 440px;
+      margin-top: 325px;
       margin-left: 970px;
       border: none;
       border-radius: 9px;
@@ -219,7 +241,7 @@ transition: all, 0.5s;
     #stripe{
       font-family: Arial, Helvetica, sans-serif;
       position: absolute;
-      margin-top: 479px;
+      margin-top: 365px;
       margin-left: 620px;
       font-size: 10px;
     }

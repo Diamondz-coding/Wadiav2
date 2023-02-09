@@ -16,6 +16,8 @@
 </head>
 <script src="https://kit.fontawesome.com/2aa3c3cef5.js" crossorigin="anonymous"></script>
 
+<h1 id="c2title">TWISTED ROPE CHAIN</h1>
+
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
@@ -43,7 +45,16 @@
 </div>
 <style>
   #navbar a{
+    font-family: 'Oxygen', sans-serif;
     padding: 35px;
+  }
+  #c2title{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 50px;
+    font-style: bolder;;
+    margin-top: 150px;
+    margin-left: 250px;
+    transition: all, 0.5s;
   }
 </style>
 </div>
@@ -57,12 +68,14 @@
     if(url=="https://wadia.info/imgs/bgdark.png" || url=="http://127.0.0.1:5500/imgs/bgdark.png"){
       var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
       moon.className = "fa-light fa-moon"
+      document.getElementById('c2title').style.color = "black"
       document.getElementById('desc').style.color = "black"
       document.getElementById('stripe').style.color = "black"
       document.body.style.backgroundImage="url('/imgs/bg.jpg')"
     } else if(url=="https://wadia.info/imgs/bg.jpg" || url=="http://127.0.0.1:5500/imgs/bg.jpg"){
       document.body.style.backgroundImage="url('/imgs/bgdark.png')"
       document.getElementById('desc').style.color = "white"
+      document.getElementById('c2title').style.color = "white"
       document.getElementById('stripe').style.color = "white"
     }else{
       console.log("error")
@@ -97,17 +110,18 @@
   function purchase(){
     location.replace('https://buy.stripe.com/aEU4iJdIA3KtexG8wx')
   }
+
 </script>
 <img  id="i1" src="/imgs/chain2.jpg" alt="" width="280px">
-<p id="desc">This 2mm twisted rope chain exudes elegance and sophistication. Its thickness adds a touch of boldness<br> to its delicate twisted design, creating a unique and eye-catching piece that is sure to turn heads. <br>The rope pattern adds texture and dimension to the chain, making it the perfect accessory for layering or <br> wearing alone as a statement piece. Its durable construction promises long-lasting wear and with a width<br> of 2mm, it's perfect for those who prefer a subtle but impactful look. This chain is the perfect choice for <br>anyone who wants to add a touch of elegance to their everyday wardrobe.</p>
+<p id="desc">This 2mm twisted rope chain exudes elegance and sophistication. Its thickness adds a touch of boldness<br> to its delicate twisted design, creating a unique and eye-catching piece that is sure to turn heads. <br>The rope pattern adds texture and dimension to the chain, making it the perfect accessory for layering or <br> wearing alone as a statement piece. Its durable construction promises long-lasting wear and with a width<br> of 2mm, it's perfect for those who prefer a subtle but impactful look. This chain is the perfect choice for <br>anyone who wants to add a touch of elegance to their everyday wardrobe.<br><br>It is available in the following sizes:<br>▷ 40cm (2mm ONLY) <br>▷ <s>50cm</s> OUT OF STOCK <br>▷ <s>55cm</s> OUT OF STOCK</p>
 <button onclick="purchase()"id="purchase">Pay By Card</button>
 <p id="stripe">All payments are handled through stripe.</p>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+  
     #i1{
         position: absolute;
         margin-left: 250px;
-        margin-top: 250px;
+        margin-top: 2px;
         border: 10px solid #2c2c2c;
         border-radius: 22px;
         transition: all, 0.5s;
@@ -120,13 +134,13 @@
     #desc{
       position: absolute;
       left: 30%;
-      margin-top: 250px;
+      margin-top: 25px;
       font: 1em sans-serif;
       word-wrap: inherit;
     }
     #purchase{
       position: absolute;
-      margin-top: 440px;
+      margin-top: 240px;
       margin-left: 630px;
       border: none;
       border-radius: 9px;
@@ -149,7 +163,7 @@ transition: all, 0.5s;
     #stripe{
       font-family: Arial, Helvetica, sans-serif;
       position: absolute;
-      margin-top: 479px;
+      margin-top: 280px;
       margin-left: 620px;
       font-size: 10px;
     }

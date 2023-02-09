@@ -10,16 +10,9 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
 </style>
-<body onload="widthcheck()">
+<body>
   <head>
-    <script>
-      function widthcheck(){
-      var width = window.screen.availWidth
-      if(width <1000){
-        location.replace('https://wadia.info/contactmobile.html')
-      }
-      }
-    </script>
+   
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
@@ -43,14 +36,15 @@
 <script>
   
 </script>
-
+<div id="page">>
   <h1 id="slogan">ELEGANCE, ELAVATED</h1>
   <h4 id="contact">Contact us<h4>
   <h5 id="email">contact@wadia.info</h5>
   <h3 id="sep5"></h3>
+  </div>
+  <img id="l"src="/imgs/Midlogo.png" alt="LOGO">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-    #contact{
+        #contact{
       margin-top: 500px;
       margin-left: 780px;
       opacity: 1;
@@ -78,6 +72,60 @@
   #slogan:hover{
     transform: scale(1.2);
   }
+    @media screen and (max-width: 1700px) { 
+    #page{
+      margin-left: -100px
+    }
+    #l{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1350px) { 
+    #page{
+      margin-left: -200px
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    #page{
+      margin-left: -300px
+    }
+   }
+   @media screen and (max-width: 1110px) { 
+    
+   }
+   @media screen and (max-width: 1000px) {
+    #page{
+      margin-left: -400px
+    }
+    }
+    @media screen and (max-width: 890px) {
+      #page{
+        margin-left: -500px
+      }
+     }
+     @media screen and (max-width: 720px) {
+      #page{
+        margin-left: -600px
+      }
+      }
+      @media screen and (max-width: 615px) {
+        #slogan{
+          width: 325px;
+          font-size: 20px
+        }
+        #contact{
+          font-size: 50px;
+          
+        }
+        
+       }
+       @media screen and (max-width: 615px) {
+        #page{
+          margin-left: -700px
+        }
+       }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
   
   </style>
   
@@ -87,7 +135,7 @@
 
 </div>
 
-<img id="l"src="/imgs/Midlogo.png" alt="LOGO">
+
 <style>
 #l{
   position: absolute;
@@ -110,7 +158,7 @@
  
 <div id="socials">
   <h1>Socials</h1>
-  <h3>Ticktock-wadiaofficial</h3>
+  <h3>TikTok-wadiaofficial</h3>
   <h3>Instagram-wadiaofficial</h3>
   
 
