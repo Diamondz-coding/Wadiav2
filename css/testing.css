@@ -109,7 +109,7 @@ body {
     
 }
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 3000px) {
 #images {
   transform: scale(0.66);
   height: 480px;
