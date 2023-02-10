@@ -142,14 +142,29 @@
       position: absolute;
       margin-top: 240px;
       margin-left: 630px;
-      border: none;
-      border-radius: 9px;
-      background-color: #436ba3;
-      width: 150px;
-      height: 40px;
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      cursor: pointer;
+      box-shadow: 0px 1px 50px -6px #00b3ff;
+	background:linear-gradient(to bottom, #00ccff 5%, #0062a3 100%);
+	background-color:#00ccff;
+	border-radius:42px;
+	border:2px solid #00a6ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:13px;
+	padding:11px 25px;
+	text-decoration:none;
+}
+	   
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #383b3d 5%, #000000 100%);
+	background-color:#383b3d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
       
 transition: all, 0.5s;
 
