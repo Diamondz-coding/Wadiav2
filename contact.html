@@ -10,10 +10,33 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
 </style>
-<body>
-  <head>
-   
-  <head>
+<body onload="disabletouch()">
+  <script>
+    function disabletouch(){
+    function hasTouch() {
+  return 'ontouchstart' in document.documentElement
+         || navigator.maxTouchPoints > 0
+         || navigator.msMaxTouchPoints > 0;
+}
+
+if (hasTouch()) { // remove all the :hover stylesheets
+  try { // prevent exception on browsers not supporting DOM styleSheets properly
+    for (var si in document.styleSheets) {
+      var styleSheet = document.styleSheets[si];
+      if (!styleSheet.rules) continue;
+
+      for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+        if (!styleSheet.rules[ri].selectorText) continue;
+
+        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+          styleSheet.deleteRule(ri);
+        }
+      }
+    }
+  } catch (ex) {}
+}
+}
+  </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <script>
@@ -40,31 +63,36 @@
   <h1 id="slogan">ELEGANCE, ELAVATED</h1>
   <h4 id="contact">Contact us<h4>
   <h5 id="email">contact@wadia.info</h5>
+  <img id="l"src="/imgs/Midlogo.png" alt="LOGO">
   <h3 id="sep5"></h3>
   </div>
-  <img id="l"src="/imgs/Midlogo.png" alt="LOGO">
+  
   <style>
         #contact{
-      margin-top: 500px;
+      margin-top:100px;
       margin-left: 780px;
       opacity: 1;
       font-size: 70px;
-      position:relative;
+      position:absolute;
       font-family: 'Inter', sans-serif;
     }
     
     
     
-
+    
 
     #email{
+      margin-top: 200px;
       margin-left: 770px;
       font-size: 40px;
       font-family: sans-serif;
       opacity: 1;
+      position: absolute;
     }
   #slogan{
-    margin-top: 150px;
+    position: relative;
+    
+    margin-top: 500px;
     font-size: 30px;
     margin-left: 712px;
     width: 485px;
@@ -130,6 +158,20 @@
           margin-left: -700px
         }
        }
+       @media screen and (max-width: 365px) {
+        #slogan{
+          font-size: 15px;
+          width: 250px;
+          margin-left: 750px
+        }
+        #contact{
+          margin-left: 750px
+        }
+        #email{
+          margin-left: 760px;
+          font-size: 25px
+        }
+       }
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
   
@@ -146,7 +188,7 @@
 #l{
   position: absolute;
   width: 200px;
-  margin-top: -550px;
+  margin-top: -300px;
   margin-left: 860px;
   transition: all,0.5s;
   
@@ -155,6 +197,7 @@
   transform: scale(1.2);
 }
 #sep5{
+  margin-top: 300px;
   opacity: 1;
   width: 100%;
   border-bottom: solid;
