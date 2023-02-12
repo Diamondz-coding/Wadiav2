@@ -18,9 +18,7 @@ body {
     width: 100%;
     z-index: 5;
   }
-*{
-  cursor: none;
-}
+
   body::-webkit-scrollbar{
     display: none;
   }
