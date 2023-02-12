@@ -1,272 +1,292 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="css/testing.css">
-<link rel="icon "href="/imgs/diamond.png" type="image/icon type">
-<meta name="description" content="Premium jewelry for you, WADIA Elenance, Elavated"></meta>
-<title>Wadia</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<script src="https://kit.fontawesome.com/2aa3c3cef5.js" crossorigin="anonymous"></script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
-</style>
-<body onload="setTimeout(CheckWidth, 2000),widthcheck()">
   <head>
+    <link rel="stylesheet" href="css/testing.css">
+    <link rel="icon " href="/imgs/diamond.png" type="image/icon type">
+    <meta name="description" content="Premium jewelry for you, WADIA Elegance, Elevated">
+    </meta>
+    <link href="/css/pointer.css" rel="stylesheet">
+    <title>Wadia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <script src="https://kit.fontawesome.com/2aa3c3cef5.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
+  </style>
+  <body onload="setTimeout(CheckWidth, 2000),widthcheck(),document.documentElement.style.cursor = 'none';">
+    <head>
+      <script>
+        document.documentElement.style.cursor = 'none';
+      </script>
+      <script src="js/pointer.js"></script>
     <script>
-      function widthcheck(){
-      
-      var width = window.screen.availWidth
-      if(width <1000){
-        location.replace('https://wadia.info/mobile.html')
-      }
-      }
+        init_pointer({
+          pointerColor: "grey",
+          ringSize: 15
+        })
     </script>
-    
-    <script>
-      function CheckWidth(){
-      var width = window.screen.availWidth
-      if(width <1800){
-        if(width >1000){
-          if(confirm("Your screen is less than 1800 pixels in width, If the website looks strange, for example, images overlaying, please click O̲K̲ to be redirected to a fixed website") == true){
-            location.replace("https://wadia.info/mobile.html")
+      <script>
+        function widthcheck() {
+          var width = window.screen.availWidth
+          if (width < 1000) {
+            location.replace('https://wadia.info/mobile.html')
           }
         }
-        
-      }
-      }
-    </script>
-    <script>
-      function dark(){
-        const main = document.body;
-        const styles = window.getComputedStyle(main);
-        const image = styles.backgroundImage;
-        const url = image.slice(5, -2);
-        console.log(url)
-        if(url=="https://wadia.info/imgs/bgdark.png" || url=="http://127.0.0.1:5500/imgs/bgdark.png")  {
-          var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
-          moon.className = "fa-light fa-moon"
-          document.body.style.backgroundImage="url('/imgs/bg.jpg')"
-          document.getElementById('slogan').style.borderColor="black"
-          document.getElementById('slogan').style.color="black"
-          document.getElementById("logomid").src = "/imgs/Midlogo.png";
-          document.getElementById("CHAIN1").style.borderColor = "#333"
-          document.getElementById("CHAIN2").style.borderColor = "#333"
-          document.getElementById("T1").style.color = "black"
-          document.getElementById("T2").style.color = "black"
-          document.getElementById("D1").style.color = "black"
-          document.getElementById("D2").style.color = "black"
-        } else if(url=="https://wadia.info/imgs/bg.jpg" || url=="http://127.0.0.1:5500/imgs/bg.jpg"){
-          document.body.style.backgroundImage="url('/imgs/bgdark.png')"
-          document.getElementById('slogan').style.borderColor="white"
-          document.getElementById('slogan').style.color="white"
-          document.getElementById("logomid").src = "/imgs/image.png";
-          document.getElementById("CHAIN1").style.borderColor = "#8c8a89"
-          document.getElementById("CHAIN2").style.borderColor = "#8c8a89"
-          document.getElementById("T1").style.color = "white"
-          document.getElementById("T2").style.color = "white"
-          document.getElementById("D1").style.color = "white"
-          document.getElementById("D2").style.color = "white"
-          
-        }else{
-          console.log("error")
+      </script>
+      <script>
+        function CheckWidth() {
+          var width = window.screen.availWidth
+          if (width < 1800) {
+            if (width > 1000) {
+              if (confirm("Your screen is less than 1800 pixels in width, If the website looks strange, for example, images overlaying, please click O̲K̲ to be redirected to a fixed website") == true) {
+                location.replace("https://wadia.info/mobile.html")
+              }
+            }
+          }
         }
-        
-      }
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      </script>
+      <script>
+        function dark() {
+          const main = document.body;
+          const styles = window.getComputedStyle(main);
+          const image = styles.backgroundImage;
+          const url = image.slice(5, -2);
+          console.log(url)
+          if (url == "https://wadia.info/imgs/bgdark.png" || url == "http://127.0.0.1:5500/imgs/bgdark.png") {
+            var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
+            moon.className = "fa-light fa-moon"
+            document.body.style.backgroundImage = "url('/imgs/bg.jpg')"
+            document.getElementById('slogan').style.borderColor = "black"
+            document.getElementById('slogan').style.color = "black"
+            document.getElementById("logomid").src = "/imgs/Midlogo.png";
+            document.getElementById("CHAIN1").style.borderColor = "#333"
+            document.getElementById("CHAIN2").style.borderColor = "#333"
+            document.getElementById("T1").style.color = "black"
+            document.getElementById("T2").style.color = "black"
+            document.getElementById("D1").style.color = "black"
+            
+            document.getElementById("D2").style.color = "black"
+          } else if (url == "https://wadia.info/imgs/bg.jpg" || url == "http://127.0.0.1:5500/imgs/bg.jpg") {
+            document.body.style.backgroundImage = "url('/imgs/bgdark.png')"
+            document.getElementById('slogan').style.borderColor = "white"
+            document.getElementById('slogan').style.color = "white"
+            document.getElementById("logomid").src = "/imgs/image.png";
+            document.getElementById("CHAIN1").style.borderColor = "#8c8a89"
+            document.getElementById("CHAIN2").style.borderColor = "#8c8a89"
+            document.getElementById("T1").style.color = "white"
+            document.getElementById("T2").style.color = "white"
+            
+            document.getElementById("D1").style.color = "white"
+            document.getElementById("D2").style.color = "white"
+          } else {
+            console.log("error")
+          }
+        }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <script>
-      function logoredirect(){
+      function logoredirect() {
         location.replace("index.html")
       }
     </script>
-<div id="navbar">
-<img class="logo" src="/imgs/diamond.png" alt="" onclick="logoredirect()">
-  <img class="logo2"src="/imgs/WadialogoV2white-AI.png" alt="" width="70px" onclick="logoredirect()">
-  <a href="index.html">Home</a>
-  <button onclick="dark()"class="dark"><i class="fa-solid fa-moon fa-5x"></i></button>
-  <a href="contact.html">Contact</a>
-</div>
-<h1 id="slogan">ELEGANCE, ELAVATED</h1>
-<style>
-  #navbar a{
-    padding: 35px;
-  }
-</style>
-<div class="vl"></div>
-<div class="hl"></div>
-<div id="wrap">
-  
-<div id="images">
-  
-  <script>
-    function clicked() {
-      location.replace('chain1moreinfo.html')
-    }
-  </script>
-  <img id="CHAIN1"src="/imgs/chain1.jpg" alt="CHAINPHOTO">
-  <h1 id="P1">£24.99</h1>
-  <button onclick="clicked()" class="mi1">More Information</button>
-  
-  <style>
-    .mi1{
-      transition: all, 0.5s;
-      cursor: pointer;
-      padding-top: 500px;
-      position: absolute;
-      opacity: 0%;
-      background-color: rgb(63, 63, 63);
-    border-radius: 50px;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 170px;
-    margin-top: 400px;
+    <div id="navbar">
+      <img class="logo" src="/imgs/diamond.png" alt="" onclick="logoredirect()">
+      <img class="logo2" src="/imgs/WadialogoV2white-AI.png" alt="" width="70px" onclick="logoredirect()">
+      <a href="index.html">Home</a>
+      <button onclick="dark()" class="dark">
+        <i class="fa-solid fa-moon fa-5x"></i>
+      </button>
+      <a href="contact.html">Contact</a>
+    </div>
+    <h1 id="slogan">ELEGANCE, ELEVATED</h1>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
-    }
-  </style>
-  <style>
+      #navbar a {
+        font-weight: bolder;
+        font-family: 'Raleway', sans-serif;
+        padding: 35px;
+      }
+    </style>
+    <div class="vl"></div>
+    <div class="hl"></div>
+    <div id="wrap">
+      <div id="images">
+        <script>
+          function clicked() {
+            location.replace('chain1moreinfo.html')
+          }
+        </script>
+        <img id="CHAIN1" src="/imgs/chain1.jpg" alt="CHAINPHOTO">
+        <h1 id="P1">£24.99</h1>
+        <button onclick="clicked()" class="mi1">More Information</button>
+        <style>
+          .mi1 {
+            transition: all, 0.5s;
+            
+            padding-top: 500px;
+            position: absolute;
+            opacity: 0%;
+            background-color: rgb(63, 63, 63);
+            border-radius: 50px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 170px;
+            margin-top: 400px;
+          }
+        </style>
+        <style>
+          .dark {
+            background-color: none;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            position: absolute;
+            margin-top: 30px;
+            background-image: url(moon.png) no-repeat;
+            margin-left: 140px;
+            
+          }
 
-    .dark{
-    
-      background-color: none;
-      border:none;
-      background-color:transparent;
-      outline:none;
-      position: absolute;
-      margin-top: 30px;
-      
-      background-image: url(moon.png) no-repeat;
-      margin-left: 140px;
-      cursor: pointer;
-    }
-    .fa-5x{
-      font-size: 2em;
-    }
-  
-  </style>
-  <h2 id="T1">Cuban Link Chain</h2>
-  
-  <p id="D1">This chain is plated with Sterling Silver <br> and maintains its shine in all conditions.<br><br>Available in sizes: <br>▷ 45cm (3mm ONLY)<br>▷ 50cm (3mm, 7mm, 5mm ONLY)<br>▷ 55cm (5mm ONLY)<br></p>
-  <style>
-    #images p{
-      font-family: 'Nunito', sans-serif;
-      font-weight: 700;   };
-</style>
+          .fa-5x {
+            font-size: 2em;
+          }
+        </style>
+        <h2 id="T1">Cuban Link Chain</h2>
+        <p id="D1">This chain is plated with Sterling Silver <br> and maintains its shine in all conditions. <br>
+          <br>Available in sizes: <br>▷ 45cm (3mm ONLY) <br>▷ 50cm (3mm, 7mm, 5mm ONLY) <br>▷ 55cm (5mm ONLY) <br>
+        </p>
+        <style>
+          #images p {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+          }
 
-<style>
-  @media only screen and (max-width: 600px) {
-  #images2{
-    position: absolute;
-    transform: scale(0.5);
-    padding-top: 820px;
-    padding-left: -400px;
-    margin-left: 1%;
-    pointer-events: none;
-  }
-  #images2 p{
-    opacity: 1;
-    margin-left: 20px;
-    margin-top: -888px;
-    font-size: 23px;
-  }
-  #images{
-    
-    transform: scale(0.5);
-    padding-top: 200px;
-    margin-left: 1%;
-    pointer-events: none;
-  }
-  #images p{
-    position: absolute;
-    opacity: 1;
-    padding:5000px;
-    font-size: 500px;
-    margin-left: 20px;
-    font-size: 23px;
-  }
+          ;
+        </style>
+        
+        <style>
+          @media only screen and (max-width: 600px) {
+            #images2 {
+              position: absolute;
+              transform: scale(0.5);
+              padding-top: 820px;
+              padding-left: -400px;
+              margin-left: 1%;
+              pointer-events: none;
+            }
 
-  #T1{
-    float: right;
-    color: black;
-    font-size: 25px;
-    position: absolute;
-    opacity: 1;
-    margin-top: -1000px;
-    margin-left: 10px;
-  }
-  #T2{
-    margin-top: -420px;
-  }
-  #logo{
-    height: 40px;
-    width: 60px;
-  }
+            #images2 p {
+              opacity: 1;
+              margin-left: 20px;
+              margin-top: -888px;
+              font-size: 23px;
+            }
 
-  #navbar href{
-    font-size: 5px;
-  }
-}
-#T2{
-  margin-top: 230px;
-}
-#P2{
-  position: absolute;
-  margin-left: 200px;
-  margin-top: -290px;
-  opacity: 0;
-  transition: all,0.5s;
-}
-#images2:hover h1{
-  opacity: 1;
-}
-</style>
+            #images {
+              transform: scale(0.5);
+              padding-top: 200px;
+              margin-left: 1%;
+              pointer-events: none;
+            }
 
-</div>
-<div id="middle">
-<img id="logomid" src="/imgs/Midlogo.png" alt="" width="500px">
-</div>
-<div id="images2">
-  <img id="CHAIN2" src="/imgs/chain2.jpg" alt="CHAINPHOTO">
-  <p id="D2">This twisted rope chain is Sterling Silver Plated <br> It is available is sizes: <br>▷ 40cm (2mm ONLY) <br>▷ <s>50cm</s> OUT OF STOCK <br>▷ <s>55cm</s> OUT OF STOCK<br> <br> <br> <br> <br><br> </p>
-  <h1 id="P2">£19.99</h1>
-  <button onclick="location.replace('chain2moreinfo.html')" class="mi2">More Information</button>
-  <style>
-    .mi2{
-      transition: all, 0.5s;
-      cursor: pointer;
-      padding-top: 500px;
-      position: absolute;
-    opacity: 0%;
-      background-color: rgb(63, 63, 63);
-    border-radius: 50px;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 170px;
-    margin-top: 80px;
+            #images p {
+              position: absolute;
+              opacity: 1;
+              padding: 5000px;
+              font-size: 500px;
+              margin-left: 20px;
+              font-size: 23px;
+            }
 
+            #T1 {
+              float: right;
+              color: black;
+              font-size: 25px;
+              position: absolute;
+              opacity: 1;
+              margin-top: -1000px;
+              margin-left: 10px;
+            }
 
-    }
-    #images2:hover button{
-      opacity: 0.7;
-    }
-  </style>
-  <h2 id="T2">Twisted Rope Chain</h2>
-</div>
-</div>
-<div id="particles-js"></div>
-<div id="particles-js"></div>
+            #T2 {
+              margin-top: -420px;
+            }
 
-<h1 id="copy">Copyright @Wadia.info 2023</h1>
+            #logo {
+              height: 40px;
+              width: 60px;
+            }
 
+            #navbar href {
+              font-size: 5px;
+            }
+          }
 
-</body>
+          #T2 {
+            margin-top: 230px;
+          }
+
+          #P2 {
+            position: absolute;
+            margin-left: 200px;
+            margin-top: -290px;
+            opacity: 0;
+            transition: all, 0.5s;
+          }
+
+          #images2:hover h1 {
+            opacity: 1;
+          }
+        </style>
+      </div>
+      <div id="middle">
+        <img id="logomid" src="/imgs/Midlogo.png" alt="" width="500px">
+      </div>
+      <div id="images2">
+        <img id="CHAIN2" src="/imgs/chain2.jpg" alt="CHAINPHOTO">
+        <p id="D2">This twisted rope chain is Sterling Silver Plated <br> It is available is sizes: <br>▷ 40cm (2mm ONLY) <br>▷ <s>50cm</s> OUT OF STOCK <br>▷ <s>55cm</s> OUT OF STOCK <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+        <h1 id="P2">£19.99</h1>
+        <button onclick="location.replace('chain2moreinfo.html')" class="mi2">More Information</button>
+        <style>
+          .mi2 {
+            transition: all, 0.5s;
+            
+            padding-top: 500px;
+            position: absolute;
+            opacity: 0%;
+            background-color: rgb(63, 63, 63);
+            border-radius: 50px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 170px;
+            margin-top: 80px;
+          }
+
+          #images2:hover button {
+            opacity: 0.7;
+          }
+        </style>
+        <h2 id="T2">Twisted Rope Chain</h2>
+      </div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="particles-js"></div>
+    <h1 id="copy">Copyright @Wadia.info 2023</h1>
+  </body>
 </html>
