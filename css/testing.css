@@ -1,315 +1,260 @@
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-20%);
-  }
+      transform: translateX(-20%);
+ }
   100% {
-    transform: translateX(0);
-  }
+      transform: translateX(0);
+ }
 }
-
 body {
   top: 0;
-    margin: 0;
-    background-color: #f1f1f1;
-    background-image: url(/imgs/bg.jpg);
-    transition: all,0.5s;
-    background-attachment: fixed;
-    height: 120vh;
-    width: 100%;
-    z-index: 5;
-  }
-
-  body::-webkit-scrollbar{
-    display: none;
-  }
-  @font-face {
-    font-family: Wadia;
-    src: url(/IKARRG__.TTF);
-  }
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-  #navbar {
-    background-color: #f1f1f1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: block;
-    height: 100px;
-    opacity: 1;
-    transition: all,0.5s ;
-    border-bottom-style: solid;
-    border-bottom-color: #333;
-    z-index: 1;
-    font-family: 'Raleway', sans-serif;
-    
-    
-    
-    
-    
-  }
-  #navbar:hover{
-    background-color: #333;
-    border-bottom-color: #f1f1f1;
-  }
-  #navbar:hover a{
-    color: #f1f1f1;
-    
-    
-    
-  }
-
-  #navbar:hover li{
-    background-color: #f1f1f1
-  }
-  @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-  #navbar a {
-    float: left;
-    font-style: bold;
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 30px;
-    height: 40px;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-    
-    padding-right: 25px;
-    padding-left: 25px;
-    transition: 0.5s;
-    
-    
-    
-  }
-
-  .logo{
-    height: 70px;
-    padding: 10px;
-    width: 90px;
-    float: right;
-    position: relative;
-    -webkit-transition: opacity 0.4s ease-in-out;
-    -moz-transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
-    transition: opacity 0.4s ease-in-out;
-    cursor: pointer;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-  }
-  .logo2{
-      float: right;
-      opacity: 0;
-      position: absolute;
-      height: 70px;
-      padding: 10px;
-      margin-left: 1810px;
-      width: 90px;
-      z-index: 2;
-      -webkit-transition: opacity 0.4s ease-in-out;
-      -moz-transition: opacity 0.4s ease-in-out;
-      -o-transition: opacity 0.4s ease-in-out;
-      transition: opacity 0.4s ease-in-out;
-      cursor: pointer;
-    
-  }
-  #navbar:hover .logo{
-    opacity: 0;
-  }
-  #navbar:hover .logo2{
-    opacity: 1;
-  }
-
-
+  margin: 0;
+  background-color: #f1f1f1;
+  background-image: url(/imgs/bg.jpg);
+  transition: all,0.5s;
+  background-attachment: fixed;
+  height: 120vh;
+  width: 100%;
+  z-index: 5;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+@font-face {
+  font-family: Wadia;
+  src: url(/IKARRG__.TTF);
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+#navbar {
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  height: 100px;
+  opacity: 1;
+  transition: all,0.5s ;
+  border-bottom-style: solid;
+  border-bottom-color: #333;
+  z-index: 1;
+  font-family: 'Raleway', sans-serif;
+}
+#navbar:hover{
+  background-color: #333;
+  border-bottom-color: #f1f1f1;
+}
+#navbar:hover a{
+  color: #f1f1f1;
+}
+#navbar:hover li{
+  background-color: #f1f1f1 
+}
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+#navbar a {
+  float: left;
+  font-style: bold;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 30px;
+  height: 40px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+  padding-right: 25px;
+  padding-left: 25px;
+  transition: 0.5s;
+}
+.logo{
+  height: 70px;
+  padding: 10px;
+  width: 90px;
+  float: right;
+  position: relative;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.logo2{
+  float: right;
+  opacity: 0;
+  position: absolute;
+  height: 70px;
+  padding: 10px;
+  margin-left: 1810px;
+  width: 90px;
+  z-index: 2;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
+}
+#navbar:hover .logo{
+  opacity: 0;
+}
+#navbar:hover .logo2{
+  opacity: 1;
+}
 #navbar a:hover{
   color:gray ;
-  cursor: url('/imgs/cursor2.svg') 32 32,auto;
 }
-
-
 #particles-js{
-    height: 100vh;
-    width: 100%;
-    
-}
-
-@media only screen and (max-width: 3000px) {
-#images {
-  transform: scale(0.66);
-  height: 480px;
-  width: 480px;
-  margin-top: 200px;
-  margin-left: 25px;
-  
-  transition: all, 0.5s;
-  
-  
-  
-  
-  
-}
-#T1{
-  
-  margin-top: 200px;
-  padding-top: 520px;
-  font-size: 25px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
-#images p{
-  font-size: 20px;
-  float: right;
-  margin-top: -550px;
-  position: absolute;
-  margin-left: 500px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: all, 0.5s;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 2000;
-  padding-left: 20px;
-
-}
-#images:hover p{
-  opacity: 1;
-}
-#images h1{
-  position: absolute;
-  margin-top: 20px;
-  padding-left: 210px;
-  opacity: 0;
-  transition: all, 0.5s;
-}
-#images:hover button{
-  opacity: 0.7;
-}
-#images:hover h1{
-  opacity: 1;
-  
-}
-#images:hover {
-  transform: scale(0.7);
-
-  
-
-}
-#images:hover img{
-  -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-  box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-}
-#CHAIN1:hover{
-
-  transition: all,0.5s;
-  transform: scale(1);
-}
-#CHAIN1{
-  position:absolute ;
-  border: 10px solid #333;
-  border-radius: 10px;
-  transition: all,0.5s;
-}
-
-
-
-
-
-
-
-
-#text2{
-  background-image: linear-gradient(#f2f2f2, #333);
-  position: relative;
-  height: 300px;
-  bottom: 1300px;
+  height: 100vh;
   width: 100%;
-  margin-top: 500px;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-#images2 {
-  margin-right: 25px;
-  float: right;
-  transform: scale(0.66);
-  height: 480px;
-  width: 480px;
-
-  margin-top: -501px;
-  margin-left: 50px;
-  
-  transition: all, 0.5s;
-}
-#images2:hover{
-  transform: scale(0.7);
-}
-#info1{
-  opacity: 1;
-  transition: all, 5s;
-  position: absolute;
-  font-size: 1px;
-  margin-left: 500px;
-  height: 1px;
-  border-radius:20px;
-  border:10px solid #000000;
-  padding: 300px;
-  background-image: url(black-texture-background.png);
-  
-}
-#info1 h1{
-  font-size: 20px;
-  margin-left: -150px;
-  position: absolute;
-}
-#images2:hover img{
-  -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-  box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-}
-#CHAIN2{
-  border: 10px solid #333;
-  border-radius: 10px;
-  transition: all,0.5s;
-}
-#CHAIN2:hover{
-  -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-  box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
-  transition: 0.5s;
-  transform: scale(1);
-}
-#images2 p{
-  
-  font-size: 20px;
-  margin-top: -480px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: all, 0.5s;
-  font-family: 'Nunito', sans-serif;
-  margin-left: -450px;
-  
-}
-#images2:hover p{
-  opacity: 1;
-  
-  
-}
-#images2 p{
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;   };
-
+@media only screen and (max-width: 3000px) {
+  #images {
+      transform: scale(0.66);
+      height: 480px;
+      width: 480px;
+      margin-top: 200px;
+      margin-left: 25px;
+      transition: all, 0.5s;
+ }
+  #T1{
+      margin-top: 200px;
+      padding-top: 520px;
+      font-size: 25px;
+ }
+  @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
+  #images p{
+      font-size: 20px;
+      float: right;
+      margin-top: -550px;
+      position: absolute;
+      margin-left: 500px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: all, 0.5s;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 2000;
+      padding-left: 20px;
+ }
+  #images:hover p{
+      opacity: 1;
+ }
+  #images h1{
+      position: absolute;
+      margin-top: 20px;
+      padding-left: 210px;
+      opacity: 0;
+      transition: all, 0.5s;
+ }
+  #images:hover button{
+      opacity: 0.7;
+ }
+  #images:hover h1{
+      opacity: 1;
+ }
+  #images:hover {
+      transform: scale(0.7);
+ }
+  #images:hover img{
+      -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+      -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+      box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+ }
+  #CHAIN1:hover{
+      transition: all,0.5s;
+      transform: scale(1);
+ }
+  #CHAIN1{
+      position:absolute ;
+      border: 10px solid #333;
+      border-radius: 10px;
+      transition: all,0.5s;
+ }
+  #text2{
+      background-image: linear-gradient(#f2f2f2, #333);
+      position: relative;
+      height: 300px;
+      bottom: 1300px;
+      width: 100%;
+      margin-top: 500px;
+ }
+  html {
+      scroll-behavior: smooth;
+ }
+  #images2 {
+      margin-right: 25px;
+      float: right;
+      transform: scale(0.66);
+      height: 480px;
+      width: 480px;
+      margin-top: -501px;
+      margin-left: 50px;
+      transition: all, 0.5s;
+ }
+  #images2:hover{
+      transform: scale(0.7);
+ }
+  #info1{
+      opacity: 1;
+      transition: all, 5s;
+      position: absolute;
+      font-size: 1px;
+      margin-left: 500px;
+      height: 1px;
+      border-radius:20px;
+      border:10px solid #000000;
+      padding: 300px;
+      background-image: url(black-texture-background.png);
+ }
+  #info1 h1{
+      font-size: 20px;
+      margin-left: -150px;
+      position: absolute;
+ }
+  #images2:hover img{
+      -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+      -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+      box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+ }
+  #CHAIN2{
+      border: 10px solid #333;
+      border-radius: 10px;
+      transition: all,0.5s;
+ }
+  #CHAIN2:hover{
+      -webkit-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+      -moz-box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+      box-shadow: -29px 35px 5px -3px rgba(0,0,0,0.75);
+      transition: 0.5s;
+      transform: scale(1);
+ }
+  #images2 p{
+      font-size: 20px;
+      margin-top: -480px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: all, 0.5s;
+      font-family: 'Nunito', sans-serif;
+      margin-left: -450px;
+ }
+  #images2:hover p{
+      opacity: 1;
+ }
+  #images2 p{
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+ }
+ ;
 }
 #logomid{
-
   margin-left: 710px;
   margin-top: -500px;
   transform: scale(0.5);
   transition: all,0.5s;
-  
 }
 #logomid:hover{
   transform: scale(0.7);
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
 #slogan{
   position: absolute;
   font-size: 25px;
@@ -317,8 +262,6 @@ html {
   margin-left: 750px;
   font-family: 'Wadia';
   font-weight: 100;
-  
-
   border: 5px solid #000000;
   width: 408px;
   transition: all,0.5S;

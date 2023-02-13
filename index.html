@@ -5,7 +5,7 @@
     <link rel="icon " href="/imgs/diamond.png" type="image/icon type">
     <meta name="description" content="Premium jewelry for you, WADIA Elegance, Elevated">
     </meta>
-    <link href="/css/pointer.css" rel="stylesheet">
+    
     <title>Wadia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -13,76 +13,13 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&family=Manrope:wght@600&family=Nunito:wght@200&display=swap');
   </style>
-  <body onload="setTimeout(CheckWidth, 2000),widthcheck(),document.documentElement.style.cursor = 'none';">
+  <body onload="widthcheck()">
     <head>
-      <script>
-        document.documentElement.style.cursor = 'none';
-      </script>
-      <script src="js/pointer.js"></script>
-    <script>
-        init_pointer({
-          pointerColor: "grey",
-          ringSize: 15
-        })
-    </script>
-      <script>
-        function widthcheck() {
-          var width = window.screen.availWidth
-          if (width < 1000) {
-            location.replace('https://wadia.info/mobile.html')
-          }
-        }
-      </script>
-      <script>
-        function CheckWidth() {
-          var width = window.screen.availWidth
-          if (width < 1800) {
-            if (width > 1000) {
-              if (confirm("Your screen is less than 1800 pixels in width, If the website looks strange, for example, images overlaying, please click O̲K̲ to be redirected to a fixed website") == true) {
-                location.replace("https://wadia.info/mobile.html")
-              }
-            }
-          }
-        }
-      </script>
-      <script>
-        function dark() {
-          const main = document.body;
-          const styles = window.getComputedStyle(main);
-          const image = styles.backgroundImage;
-          const url = image.slice(5, -2);
-          console.log(url)
-          if (url == "https://wadia.info/imgs/bgdark.png" || url == "http://127.0.0.1:5500/imgs/bgdark.png") {
-            var moon = document.getElementsByClassName(".fa-solid fa-moon fa-5x")
-            moon.className = "fa-light fa-moon"
-            document.body.style.backgroundImage = "url('/imgs/bg.jpg')"
-            document.getElementById('slogan').style.borderColor = "black"
-            document.getElementById('slogan').style.color = "black"
-            document.getElementById("logomid").src = "/imgs/Midlogo.png";
-            document.getElementById("CHAIN1").style.borderColor = "#333"
-            document.getElementById("CHAIN2").style.borderColor = "#333"
-            document.getElementById("T1").style.color = "black"
-            document.getElementById("T2").style.color = "black"
-            document.getElementById("D1").style.color = "black"
-            
-            document.getElementById("D2").style.color = "black"
-          } else if (url == "https://wadia.info/imgs/bg.jpg" || url == "http://127.0.0.1:5500/imgs/bg.jpg") {
-            document.body.style.backgroundImage = "url('/imgs/bgdark.png')"
-            document.getElementById('slogan').style.borderColor = "white"
-            document.getElementById('slogan').style.color = "white"
-            document.getElementById("logomid").src = "/imgs/image.png";
-            document.getElementById("CHAIN1").style.borderColor = "#8c8a89"
-            document.getElementById("CHAIN2").style.borderColor = "#8c8a89"
-            document.getElementById("T1").style.color = "white"
-            document.getElementById("T2").style.color = "white"
-            
-            document.getElementById("D1").style.color = "white"
-            document.getElementById("D2").style.color = "white"
-          } else {
-            console.log("error")
-          }
-        }
-      </script>
+  <script src="/js/mobilewidthcheck.js"></script>
+
+      
+ 
+      <script src="/js/darkmode.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <script>
@@ -113,19 +50,15 @@
     <div class="hl"></div>
     <div id="wrap">
       <div id="images">
-        <script>
-          function clicked() {
-            location.replace('chain1moreinfo.html')
-          }
-        </script>
+
         <img id="CHAIN1" src="/imgs/chain1.jpg" alt="CHAINPHOTO">
         <h1 id="P1">£24.99</h1>
-        <button onclick="clicked()" class="mi1">More Information</button>
+        <button onclick="location.replace('chain1moreinfo.html')" class="mi1">More Information</button>
         <style>
           .mi1 {
             transition: all, 0.5s;
             
-            cursor: none;
+            cursor: pointer;
             padding-top: 500px;
             position: absolute;
             opacity: 0%;
@@ -143,6 +76,7 @@
         </style>
         <style>
           .dark {
+            cursor: pointer;
             background-color: none;
             border: none;
             background-color: transparent;
@@ -263,7 +197,7 @@
         <style>
           .mi2 {
             transition: all, 0.5s;
-            cursor: none;
+            cursor: url(dot.svg), e-resize;
             padding-top: 500px;
             position: absolute;
             opacity: 0%;

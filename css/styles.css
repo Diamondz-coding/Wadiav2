@@ -11,10 +11,10 @@
     border-bottom-style: solid;
     border-bottom-color: #333;
     z-index: 1;
-    overflow: hidden;}
+    overflow: hidden;
+}
 *{
     transition: all, 0.5s;
-    
 }
 #nav1 a{
     float: left;
@@ -31,7 +31,8 @@
     transition: 0.5s;
     overflow: hidden;
 }
-#nav1 img{ /* Logo*/
+#nav1 img{
+   /* Logo*/
     padding-top: 19px;
     float: right;
     padding-right: 30px;
@@ -40,14 +41,16 @@
     position: relative;
 }
 #p2{
-    position: relative
+    position: relative 
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
-#CHAIN1{ /* Changing where the CHAIN1 div is */
+#CHAIN1{
+   /* Changing where the CHAIN1 div is */
     padding-top: 150px;
     padding-left: 65px;
 }
-#CHAIN1 p{ /* Editing the text under the first chain photo */
+#CHAIN1 p{
+   /* Editing the text under the first chain photo */
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
@@ -63,94 +66,92 @@
 }
 #CHAIN2{
     padding-top: 25px;
-    padding-left: 65px; /* when adding more images keep the padding the same to make sure that the image is in line with the other ones */
+    padding-left: 65px;
+   /* when adding more images keep the padding the same to make sure that the image is in line with the other ones */
 }
 #CHAIN2 p{
-    font-family: 'Roboto', sans-serif; /* same as chain1p maintain the same styles for the descriptions */
+    font-family: 'Roboto', sans-serif;
+   /* same as chain1p maintain the same styles for the descriptions */
     font-weight: bolder;
 }
 #copyright{
     font-size: 10px;
     font-weight: bolder;
 }
-@media screen and (min-width: 500px) { 
+@media screen and (min-width: 500px) {
     #CHAIN1{
         padding-left: 130px;
-    }
+   }
     #CHAIN2{
         padding-left: 130px;
-    }
-
+   }
 }
 @media screen and (min-width: 600px) {
     #CHAIN1{
-    padding-left: 180px;
-    }
+        padding-left: 180px;
+   }
     #CHAIN2{
-    padding-left: 180px;
-    }
+        padding-left: 180px;
+   }
 }
 @media screen and (min-width: 700px) {
     #CHAIN1{
-    padding-left: 230px;
-    }
+        padding-left: 230px;
+   }
     #CHAIN2{
-    padding-left: 230px;
-    }
+        padding-left: 230px;
+   }
 }
 @media screen and (min-width: 800px) {
     #CHAIN1{
-    padding-left: 280px;
-    }
+        padding-left: 280px;
+   }
     #CHAIN2{
-    padding-left: 280px;
-    }
+        padding-left: 280px;
+   }
 }
 @media screen and (min-width: 900px) {
     #CHAIN1{
-    padding-left: 330px;
-    }
+        padding-left: 330px;
+   }
     #CHAIN2{
-    padding-left: 330px;
-    }
+        padding-left: 330px;
+   }
 }
 @media screen and (min-width: 1000px) {
     #CHAIN1{
-    padding-left: 380px;
-    }
+        padding-left: 380px;
+   }
     #CHAIN2{
-    padding-left: 380px;
-    }
+        padding-left: 380px;
+   }
 }
 @media screen and (min-width: 1800px) {
     #CHAIN1{
-    padding-left: 50px;
-    }
+        padding-left: 50px;
+   }
     #CHAIN2{
-    padding-left: 1500px;
-    position: relative;
-    margin-top: -500px;
-    }
+        padding-left: 1500px;
+        position: relative;
+        margin-top: -500px;
+   }
     #copyright{
-    position: absolute; 
-    bottom: 5px; 
-    }
+        position: absolute;
+        bottom: 5px;
+   }
     nav img{
         width: 80px;
         padding-top: 20px;
-    }
+   }
     nav{
         overflow: hidden;
-    }
-
+   }
 }
-
 #CHAIN1 h1{
     margin-top: -20px;
     margin-left: 70px;
     font-size: 20px;
     position: absolute;
-    
 }
 body{
     background-image: url(/imgs/bg.jpg);
@@ -161,7 +162,6 @@ body{
     font-size: 20px;
     margin-left: 70px;
 }
-
 #copyright{
     margin-top: -2000px;
 }
