@@ -5,7 +5,6 @@
     <link rel="icon " href="/imgs/diamond.png" type="image/icon type">
     <meta name="description" content="Premium jewelry for you, WADIA Elegance, Elevated">
     </meta>
-    
     <title>Wadia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -15,28 +14,20 @@
   </style>
   <body onload="widthcheck()">
     <head>
-  <script src="/js/mobilewidthcheck.js"></script>
-
-      
- 
+      <script src="/js/mobilewidthcheck.js"></script>
       <script src="/js/darkmode.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
-    <script>
-      function logoredirect() {
-        location.replace("index.html")
-      }
-    </script>
     <div id="navbar">
-      <img class="logo" src="/imgs/diamond.png" alt="" onclick="logoredirect()">
-      <img class="logo2" src="/imgs/WadialogoV2white-AI.png" alt="" width="70px" onclick="logoredirect()">
-      <a href="index.html">Home</a>
+      <img class="logo" src="/imgs/diamond.png" alt="" onclick="location.replace('index.html')">
+      <img class="logo2" src="/imgs/WadialogoV2white-AI.png" alt="" width="70px" onclick="location.replace('index.html')">
+      <a href="#aboutscroll">Home</a>
       <button onclick="dark()" class="dark">
         <i class="fa-solid fa-moon fa-5x"></i>
       </button>
+      <a href="#aboutscroll">About</a>
       <a href="contact.html">Contact</a>
     </div>
-    <h1 id="slogan">ELEGANCE, ELEVATED</h1>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
@@ -46,139 +37,17 @@
         padding: 35px;
       }
     </style>
-    <div class="vl"></div>
-    <div class="hl"></div>
+    <h1 id="slogan">ELEGANCE, ELEVATED</h1>
+    <div id="hl"></div>
     <div id="wrap">
       <div id="images">
-
         <img id="CHAIN1" src="/imgs/chain1.jpg" alt="CHAINPHOTO">
         <h1 id="P1">£24.99</h1>
         <button onclick="location.replace('chain1moreinfo.html')" class="mi1">More Information</button>
-        <style>
-          .mi1 {
-            transition: all, 0.5s;
-            
-            cursor: pointer;
-            padding-top: 500px;
-            position: absolute;
-            opacity: 0%;
-            background-color: rgb(63, 63, 63);
-            border-radius: 50px;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-left: 170px;
-            margin-top: 400px;
-          }
-        </style>
-        <style>
-          .dark {
-            cursor: pointer;
-            background-color: none;
-            border: none;
-            background-color: transparent;
-            outline: none;
-            position: absolute;
-            margin-top: 30px;
-            background-image: url(moon.png) no-repeat;
-            margin-left: 140px;
-            
-          }
-
-          .fa-5x {
-            font-size: 2em;
-          }
-        </style>
         <h2 id="T1">Cuban Link Chain</h2>
         <p id="D1">This chain is plated with Sterling Silver <br> and maintains its shine in all conditions. <br>
           <br>Available in sizes: <br>▷ 45cm (3mm ONLY) <br>▷ 50cm (3mm, 7mm, 5mm ONLY) <br>▷ 55cm (5mm ONLY) <br>
         </p>
-        <style>
-          #images p {
-            font-family: 'Nunito', sans-serif;
-            font-weight: 700;
-          }
-
-          ;
-        </style>
-        
-        <style>
-          @media only screen and (max-width: 600px) {
-            #images2 {
-              position: absolute;
-              transform: scale(0.5);
-              padding-top: 820px;
-              padding-left: -400px;
-              margin-left: 1%;
-              pointer-events: none;
-            }
-
-            #images2 p {
-              opacity: 1;
-              margin-left: 20px;
-              margin-top: -888px;
-              font-size: 23px;
-            }
-
-            #images {
-              transform: scale(0.5);
-              padding-top: 200px;
-              margin-left: 1%;
-              pointer-events: none;
-            }
-
-            #images p {
-              position: absolute;
-              opacity: 1;
-              padding: 5000px;
-              font-size: 500px;
-              margin-left: 20px;
-              font-size: 23px;
-            }
-
-            #T1 {
-              float: right;
-              color: black;
-              font-size: 25px;
-              position: absolute;
-              opacity: 1;
-              margin-top: -1000px;
-              margin-left: 10px;
-            }
-
-            #T2 {
-              margin-top: -420px;
-            }
-
-            #logo {
-              height: 40px;
-              width: 60px;
-            }
-
-            #navbar href {
-              font-size: 5px;
-            }
-          }
-
-          #T2 {
-            margin-top: 230px;
-          }
-
-          #P2 {
-            position: absolute;
-            margin-left: 200px;
-            margin-top: -290px;
-            opacity: 0;
-            transition: all, 0.5s;
-          }
-
-          #images2:hover h1 {
-            opacity: 1;
-          }
-        </style>
       </div>
       <div id="middle">
         <img id="logomid" src="/imgs/Midlogo.png" alt="" width="500px">
@@ -194,34 +63,182 @@
         </p>
         <h1 id="P2">£19.99</h1>
         <button onclick="location.replace('chain2moreinfo.html')" class="mi2">More Information</button>
-        <style>
-          .mi2 {
-            transition: all, 0.5s;
-            cursor: url(dot.svg), e-resize;
-            padding-top: 500px;
-            position: absolute;
-            opacity: 0%;
-            background-color: rgb(63, 63, 63);
-            border-radius: 50px;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-left: 170px;
-            margin-top: 80px;
-          }
-
-          #images2:hover button {
-            opacity: 0.7;
-          }
-        </style>
         <h2 id="T2">Twisted Rope Chain</h2>
       </div>
     </div>
     <div id="particles-js"></div>
     <div id="particles-js"></div>
     <h1 id="copy">Copyright @Wadia.info 2023</h1>
+    <style>
+      #images p {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+      }
+
+      .mi1 {
+        transition: all, 0.5s;
+        cursor: pointer;
+        padding-top: 500px;
+        position: absolute;
+        opacity: 0%;
+        background-color: rgb(63, 63, 63);
+        border-radius: 50px;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 170px;
+        margin-top: 400px;
+      }
+
+      .dark {
+        cursor: pointer;
+        background-color: none;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        position: absolute;
+        margin-top: 30px;
+        background-image: url(moon.png) no-repeat;
+        margin-left: 240px;
+      }
+
+      .fa-5x {
+        font-size: 2em;
+      }
+
+      .mi2 {
+        transition: all, 0.5s;
+        cursor: pointer;
+        padding-top: 500px;
+        position: absolute;
+        opacity: 0%;
+        background-color: rgb(63, 63, 63);
+        border-radius: 50px;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 170px;
+        margin-top: 80px;
+      }
+
+      #images2:hover button {
+        opacity: 0.7;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #images2 {
+          position: absolute;
+          transform: scale(0.5);
+          padding-top: 820px;
+          padding-left: -400px;
+          margin-left: 1%;
+          pointer-events: none;
+        }
+
+        #images2 p {
+          opacity: 1;
+          margin-left: 20px;
+          margin-top: -888px;
+          font-size: 23px;
+        }
+
+        #images {
+          transform: scale(0.5);
+          padding-top: 200px;
+          margin-left: 1%;
+          pointer-events: none;
+        }
+
+        #images p {
+          position: absolute;
+          opacity: 1;
+          padding: 5000px;
+          font-size: 500px;
+          margin-left: 20px;
+          font-size: 23px;
+        }
+
+        #T1 {
+          float: right;
+          color: black;
+          font-size: 25px;
+          position: absolute;
+          opacity: 1;
+          margin-top: -1000px;
+          margin-left: 10px;
+        }
+
+        #T2 {
+          margin-top: -420px;
+        }
+
+        #logo {
+          height: 40px;
+          width: 60px;
+        }
+
+        #navbar href {
+          font-size: 5px;
+        }
+      }
+
+      #T2 {
+        margin-top: 230px;
+      }
+
+      #P2 {
+        position: absolute;
+        margin-left: 200px;
+        margin-top: -290px;
+        opacity: 0;
+        transition: all, 0.5s;
+      }
+
+      #images2:hover h1 {
+        opacity: 1;
+      }
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+    </style>
+    <div id="aboutscroll"></div>
+    <div id="abouttitle">
+      <h1>ABOUT US</h1>
+    </div>
+    <div id="about">
+      <h1>We are Wadia, a company that was established in 2022 with a passion for providing customers with top-notch jewelry at an affordable price. Our focus has been on silver-plated stainless steel chains and necklaces, ensuring that our customers receive only the best quality products. Our silver-plated stainless steel chains are crafted from high-quality stainless steel and coated with a layer of silver, giving them a beautiful and sleek look. We understand the importance of having jewelry that can withstand daily wear and tear, and our chains are designed to do just that. Our stainless steel necklaces come in a variety of styles, from simple and elegant to bold and statement-making, so that customers can find the perfect piece to suit their personal style. At Wadia, affordability is a top priority. We believe that beautiful jewelry should be accessible to everyone, regardless of their budget. Our customers appreciate the fact that they can purchase high-quality silver-plated jewelry without having to spend a lot of money. Customer satisfaction is a top priority for us. Our friendly and knowledgeable customer service team is always available to answer any questions or concerns, and we have a no-hassle return policy to give customers peace of mind. Looking towards the future, we plan to broaden our collection to include other jewelry items, such as bracelets and other pieces. Our focus will always be on providing customers with high-quality, affordable jewelry that they can enjoy for years to come. In conclusion, at Wadia, we are dedicated to providing customers with silver-plated stainless steel chains and necklaces that are both stylish and durable. Our commitment to affordability and customer satisfaction sets us apart, and we look forward to expanding our collection to include other jewelry items in the future. Buy your jewelry here, save money there.</h1>
+      <p></p>
+      <style>
+        @font-face {
+          font-family: Wadia;
+          src: url(/IKARRG__.TTF);
+        }
+
+        #aboutscroll {
+          position: absolute;
+          margin-top: -2000px;
+        }
+
+        #about {
+          font-family: 'Jost', sans-serif;
+          font-size: 12px;
+        }
+
+        #abouttitle {
+          z-index: 2;
+          position: absolute;
+          font-size: 30px;
+          margin-top: -1880px;
+          margin-left: 820px;
+          font-family: 'Jost', sans-serif;
+        }
+      </style>
+    </div>
   </body>
 </html>
