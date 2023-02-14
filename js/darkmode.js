@@ -15,8 +15,11 @@ function dark() {
       document.getElementById("CHAIN2").style.borderColor = "#333"
       document.getElementById("T1").style.color = "black"
       document.getElementById("T2").style.color = "black"
+      document.getElementById('abouttitle').style.color = "black"
+      document.getElementById('about').style.borderColor = "black"
+      document.getElementById('about').style.borderColor = "black"
       document.getElementById("D1").style.color = "black"
-      document.body.style.cursor("url('dot.svg')")
+      document.getElementById('abouttext').style.color = "black"
       document.getElementById("D2").style.color = "black"
     } else if (url == "https://wadia.info/imgs/bg.jpg" || url == "http://127.0.0.1:5500/imgs/bg.jpg") {
       document.body.style.backgroundImage = "url('/imgs/bgdark.png')"
@@ -27,7 +30,9 @@ function dark() {
       document.getElementById("CHAIN2").style.borderColor = "#8c8a89"
       document.getElementById("T1").style.color = "white"
       document.getElementById("T2").style.color = "white"
-      
+      document.getElementById('abouttext').style.color = "white"
+      document.getElementById('abouttitle').style.color = "white"
+      document.getElementById('about').style.borderColor = "white"
       document.getElementById("D1").style.color = "white"
       document.getElementById("D2").style.color = "white"
     } else {
