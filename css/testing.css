@@ -162,19 +162,23 @@ body::-webkit-scrollbar{
   #images:hover p{
       opacity: 1;
  }
-  #images h1{
+  #images #P1{
+    font-family: 'Jost', sans-serif;
       position: absolute;
       margin-top: 20px;
-      padding-left: 210px;
+      padding-left: 260px;
       opacity: 0;
       transition: all, 0.5s;
  }
   #images:hover button{
       opacity: 0.7;
  }
-  #images:hover h1{
+  #images:hover #P1{
       opacity: 1;
  }
+ #images:hover #p1s{
+  opacity: 1;
+}
   #images:hover {
       transform: scale(0.7);
  }
@@ -333,8 +337,28 @@ body::-webkit-scrollbar{
 #about h1{
   overflow-y: scroll;
   height: 400px;
+  border-radius: 20px;
+  
   
   padding: 10px;
  
   
 }
+#p1s{
+  margin-left: 150px;
+  color: #bd5631;
+  opacity: 0;
+  font-family: 'Jost', sans-serif;
+  transition: 0.5s;
+  position: absolute;
+}
+#p2s{
+  margin-left: 150px;
+  color: #bd5631;
+  opacity: 0;
+  margin-top: -290px;
+  font-family: 'Jost', sans-serif;
+  transition: 0.5s;
+  position: absolute;
+}
+
